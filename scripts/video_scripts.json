@@ -1,0 +1,88 @@
+{
+  "shorts": [
+    [
+      {
+        "headline": "Palantir Demos AI Chatbots for Military War Plans",
+        "narration": "The Pentagon could soon use AI chatbots like Claude to analyze intelligence and suggest war strategies. Palantir's demo shows how AI might revolutionize military decision-making. Could this be the future of warfare? Follow for daily AI updates."
+      },
+      {
+        "headline": "China\u2019s OpenClaw Boom Drives AI Gold Rush",
+        "narration": "China\u2019s OpenClaw is causing a frenzy! People are renting cloud servers and buying AI subscriptions just to test it. Tech companies are cashing in big time. Is this the next big thing in AI? Follow for daily AI updates."
+      },
+      {
+        "headline": "6G Is Coming: Faster Speeds, AI, and Sensing Tech",
+        "narration": "6G is set to replace 5G by 2030, promising insane upload speeds, AI integration, and radar-like sensing for devices and people. The future of connectivity is closer than you think! Follow for daily AI updates."
+      }
+    ],
+    [
+      {
+        "headline": "Zuckerberg\u2019s AI Hiring Spree Hits Snags",
+        "narration": "Meta\u2019s billion-dollar AI hiring spree isn\u2019t going smoothly. Their new AI model\u2019s rollout is delayed due to performance issues. Will Zuckerberg\u2019s big bet pay off? Follow for daily AI updates."
+      },
+      {
+        "headline": "Google\u2019s Smart Glasses Create Fake Photos Instantly",
+        "narration": "Google\u2019s smart glasses can now generate fake photos on the fly. Who needs real memories when AI can fabricate them? The line between reality and AI is blurring. Follow for daily AI updates."
+      },
+      {
+        "headline": "Pixel 10 Pro\u2019s 100x Zoom Gets a New Name",
+        "narration": "Google renamed the Pixel 10 Pro\u2019s 100x zoom feature from Pro Res Zoom to Pro Zoom. A small change, but why now? Follow for daily AI updates."
+      }
+    ],
+    [
+      {
+        "headline": "Galaxy S26 Ultra Orders Dinner with a Tap",
+        "narration": "The Galaxy S26 Ultra just ordered dinner and tea for me with one click! Gemini\u2019s automation is next-level\u2014soon it\u2019ll handle groceries too. The future is here! Follow for daily AI updates."
+      },
+      {
+        "headline": "S26 Ultra Teardown Reveals Clever Camera Upgrades",
+        "narration": "A teardown shows the Galaxy S26 Ultra\u2019s smarter hardware: brighter zoom, better cooling, and improved S Pen protection. Samsung\u2019s packing serious tech under the hood! Follow for daily AI updates."
+      },
+      {
+        "headline": "Samsung Worries Over Memory Cost Losses",
+        "narration": "Samsung is growing 'concerned' about potential losses due to rising memory costs. Could this impact their mobile business? Stay tuned for updates. Follow for daily AI updates."
+      }
+    ]
+  ],
+  "long_video": [
+    {
+      "headline": "Palantir\u2019s AI Chatbots Could Reshape Military Strategy",
+      "narration": "Palantir\u2019s latest demo reveals how AI chatbots like Anthropic\u2019s Claude might soon assist the Pentagon in analyzing intelligence and crafting war plans. The software showcases AI\u2019s potential to revolutionize military decision-making, but raises questions about the ethics of autonomous warfare. Could this be the future of defense tech?"
+    },
+    {
+      "headline": "China\u2019s OpenClaw Frenzy Fuels AI Industry Boom",
+      "narration": "China\u2019s OpenClaw is sparking a gold rush in the AI sector, with enthusiasts rushing to rent cloud servers and buy subscriptions just to experiment with it. Tech firms are reaping massive profits, but is this hype sustainable? Experts weigh in on the long-term impact of this AI craze."
+    },
+    {
+      "headline": "6G in 2030: Faster, Smarter, and More Connected",
+      "narration": "The next generation of cellular tech, 6G, is already on the horizon. Slated for 2030, it promises lightning-fast upload speeds, deep AI integration, and advanced sensing capabilities for devices and people. How will this transform our daily lives? We break down the possibilities."
+    },
+    {
+      "headline": "Meta\u2019s AI Model 'Avocado' Faces Delays Amid Struggles",
+      "narration": "Meta\u2019s next-gen AI model, codenamed 'Avocado,' is reportedly delayed again due to performance concerns. With Zuckerberg\u2019s billion-dollar hiring spree facing hurdles, can Meta catch up to rivals like OpenAI and Google? Insiders reveal the challenges behind the scenes."
+    },
+    {
+      "headline": "Google\u2019s Smart Glasses: Fabricating Reality in Real Time",
+      "narration": "Google\u2019s smart glasses are pushing boundaries by generating fake photos instantly. This raises big questions about authenticity and privacy in an AI-driven world. Are we ready for a future where reality can be altered on the fly?"
+    },
+    {
+      "headline": "Pixel 10 Pro\u2019s Zoom Renaming: What\u2019s the Big Deal?",
+      "narration": "Google quietly rebranded the Pixel 10 Pro\u2019s 100x zoom feature from Pro Res Zoom to Pro Zoom. While it seems minor, tech analysts speculate about the reasoning behind the change. Is this a sign of bigger updates to come?"
+    },
+    {
+      "headline": "Galaxy S26 Ultra: Your Personal AI Assistant",
+      "narration": "Samsung\u2019s Galaxy S26 Ultra is taking automation to new heights, ordering meals, tea, and even Ubers with a single tap. Powered by Gemini, this could redefine how we interact with our devices. What\u2019s next\u2014AI handling your entire schedule?"
+    },
+    {
+      "headline": "Inside the S26 Ultra: Camera and Cooling Upgrades Exposed",
+      "narration": "A teardown of the Galaxy S26 Ultra reveals impressive hardware upgrades, including a brighter zoom camera, enhanced cooling, and sturdier S Pen protection. Samsung\u2019s attention to detail shows why this phone is a powerhouse. Here\u2019s what makes it tick."
+    },
+    {
+      "headline": "Samsung\u2019s Memory Cost Crisis: Trouble Ahead?",
+      "narration": "Samsung is reportedly worried about potential losses in its mobile business due to soaring memory costs. Could this lead to higher phone prices or cutbacks in innovation? Industry experts weigh in on what\u2019s next for the tech giant."
+    },
+    {
+      "headline": "Meta\u2019s 'Avocado' Delay: Is the AI Race Heating Up?",
+      "narration": "Meta\u2019s highly anticipated AI model, 'Avocado,' faces another delay, sparking doubts about its competitiveness. With rivals advancing rapidly, can Meta recover lost ground? We explore the stakes in the high-stakes AI arms race."
+    }
+  ]
+}

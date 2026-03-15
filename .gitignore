@@ -1,0 +1,11 @@
+client_secret.json
+token.json
+.env
+bin/
+piper/
+audio/
+videos/
+subtitles/
+news_images/
+formatted_images/
+data/
