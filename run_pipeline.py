@@ -1,4 +1,6 @@
 import subprocess
+from email_notifier import send_email
+
 
 steps = [
 
@@ -11,6 +13,10 @@ steps = [
     "python news_template.py",
     "python shorts_video_generator.py",
     "python youtube_uploader.py"
+    send_email(
+        "SUCCESS",
+        "AI news bot ran successfully and uploaded video."
+    )
 
 ]
 
