@@ -4,6 +4,7 @@ import googleapiclient.discovery
 import googleapiclient.http
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
+from datetime import date
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
 
@@ -31,15 +32,16 @@ youtube = googleapiclient.discovery.build("youtube", "v3", credentials=creds)
 
 video_folder = "videos"
 
-for i in range(2,3):
+for i in range(1,4):
 
     video_file = f"{video_folder}/short{i}.mp4"
+    today = date.today()
 
     request = youtube.videos().insert(
         part="snippet,status",
         body={
             "snippet": {
-                "title": f"Daily AI News #{i} #Shorts",
+                "title": f"Daily AI News {today} #Shorts #AI",
                 "description": "Latest AI news in 60 seconds 🚀\n\n#AI #TechNews #Shorts",
                 "tags": ["AI", "Artificial Intelligence", "Tech News"],
                 "categoryId": "28"

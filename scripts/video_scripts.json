@@ -2,87 +2,87 @@
   "shorts": [
     [
       {
-        "headline": "Hacker Breaks Into FBI\u2019s Epstein Files",
-        "narration": "A hacker accidentally accessed the FBI\u2019s Epstein files, sparking major privacy concerns. Meanwhile, a porn-quitting app leaked user data, and Russian hackers target Signal accounts. Stay vigilant\u2014your data might be next! Follow for daily AI updates."
+        "headline": "Will AI End Coding As We Know It?",
+        "narration": "Tech journalist Clive Thompson interviewed 70+ devs at Google, Amazon, and Microsoft. His explosive conclusion? AI is reshaping programming forever. 'Coding After Coders'\u2014could this be the future? Stay ahead of the curve! Follow for daily AI updates."
       },
       {
-        "headline": "Japan Approves First Reprogrammed Cell Treatment",
-        "narration": "Japan just greenlit the world\u2019s first treatment using reprogrammed human cells\u2014a breakthrough 20 years in the making! This could revolutionize medicine. Will other countries follow? Follow for daily AI updates."
+        "headline": "Hidden Deep-Sea Proteins Supercharge Tests",
+        "narration": "Scientists discovered ultra-tough DNA-binding proteins in volcanic lakes and deep-sea vents. These molecules survive extreme heat, salt, and chemicals\u2014revolutionizing disease detection. Nature\u2019s secrets might just save lives! Follow for daily AI updates."
       },
       {
-        "headline": "Instagram Drops Chat Encryption",
-        "narration": "Instagram is removing encryption from your chats, leaving messages exposed. Privacy advocates are furious\u2014will this push users to rival platforms? Follow for daily AI updates."
+        "headline": "Meta Delays AI Model Over Performance Issues",
+        "narration": "Meta\u2019s new AI division hit a snag\u2014delaying its rollout due to performance concerns. Their only product so far? Vibes, an AI video app like OpenAI\u2019s Sora. Will they bounce back? Follow for daily AI updates."
       }
     ],
     [
       {
-        "headline": "Motorola Razr Fold vs. Ultra 2025",
-        "narration": "Motorola\u2019s Razr Fold enters the book-style foldable market, but the Razr Ultra 2025 steals the spotlight with its price cut. Which one\u2019s worth your cash? Follow for daily AI updates."
+        "headline": "Iran\u2019s Space Research Centre Damaged in Strikes",
+        "narration": "Video footage reveals severe damage to Iran\u2019s Space Research Centre after Israeli-US strikes. The fallout could reshape regional tech ambitions. Geopolitics meets space race\u2014stay tuned! Follow for daily AI updates."
       },
       {
-        "headline": "Peaky Blinders Movie Coming to Netflix",
-        "narration": "Peaky Blinders fans, rejoice! The hit series is getting a movie starring Cillian Murphy and Barry Keoghan. Get ready for more gritty drama. Follow for daily AI updates."
+        "headline": "Samsung Browser Gets AI Boost in One UI 9",
+        "narration": "Samsung Browser is leveling up with multitasking and AI features in One UI 9. With Chrome dominating, can Samsung carve its niche? The browser wars heat up! Follow for daily AI updates."
       },
       {
-        "headline": "Lawyers\u2019 AI Dilemma Revealed",
-        "narration": "Billions ride on AI in law, but are lawyers actually using it? A 17-hour conference uncovered their biggest fears. Will AI replace them? Follow for daily AI updates."
+        "headline": "Fed Holds Rates as Iran War Roils Markets",
+        "narration": "The US Fed is expected to hold rates steady amid Iran war chaos. Oil prices and market uncertainty loom large. Will policymakers navigate the storm? Follow for daily AI updates."
       }
     ],
     [
       {
-        "headline": "OpenAI Chairman\u2019s Emotional AI Struggle",
-        "narration": "OpenAI\u2019s chairman admits it\u2019s 'hard, emotionally' to let AI write his code. After a lifetime of coding, can he adapt? His dilemma mirrors ours. Follow for daily AI updates."
+        "headline": "Open-Source Tool Supercharges NVIDIA GPUs for LLMs",
+        "narration": "GreenBoost\u2014an open-source Linux module\u2014augments NVIDIA GPU memory with system RAM and NVMe storage. The goal? Run larger AI models effortlessly. Innovation at its finest! Follow for daily AI updates."
       },
       {
-        "headline": "Nvidia\u2019s AI Chip Competition Heats Up",
-        "narration": "Nvidia dominates AI chips, but rivals like Google and startups are closing in. With geopolitics in play, who will win the AI hardware race? Follow for daily AI updates."
+        "headline": "Kernel Anti-Cheats: Gaming\u2019s Secret Guardians",
+        "narration": "Modern kernel anti-cheats are ultra-sophisticated, operating at the highest privilege level in Windows. They\u2019re the invisible shield keeping games fair. But at what cost? Follow for daily AI updates."
       },
       {
-        "headline": "Podcaster Dumps AI for Human Posts",
-        "narration": "Steven Bartlett ditched AI for LinkedIn posts\u2014and engagement soared. Proof humans still beat bots? Maybe authenticity wins. Follow for daily AI updates."
+        "headline": "Court Upholds Firing After Brain Tumor Leave",
+        "narration": "Delhi High Court ruled against a director terminated post-brain tumor surgery, stating no right to a 3-year leave. A harsh reality check for employee rights. Follow for daily AI updates."
       }
     ]
   ],
   "long_video": [
     {
-      "headline": "Hacker Exposes FBI\u2019s Epstein Files",
-      "narration": "A shocking breach revealed the FBI\u2019s Epstein files, raising alarms about data security. Meanwhile, a porn-quitting app exposed user habits, and Russian hackers targeted Signal. Experts warn: your privacy is under siege. How can you protect yourself? Stay tuned as we dive into the dark world of cyber threats."
+      "headline": "AI\u2019s Takeover of Programming: The Clive Thompson Report",
+      "narration": "Tech journalist Clive Thompson\u2019s groundbreaking interviews with 70+ developers reveal a seismic shift\u2014AI is rewriting the rules of coding. From Google to startups, the consensus is clear: programming will never be the same. Dive into the future of tech with us."
     },
     {
-      "headline": "Japan\u2019s Cell Therapy Breakthrough",
-      "narration": "Japan made history by approving the first-ever treatment using reprogrammed human cells. This milestone, 20 years in the making, could transform medicine. From regenerating organs to curing diseases, the possibilities are endless. Will this pave the way for global adoption? We explore the science behind the revolution."
+      "headline": "Deep-Sea Proteins: The Next Medical Breakthrough?",
+      "narration": "Hidden in Earth\u2019s most extreme environments, scientists uncovered ultra-resilient DNA-binding proteins. These discoveries could revolutionize disease testing, offering stability under brutal conditions. How will this reshape medicine? Let\u2019s explore."
     },
     {
-      "headline": "Instagram\u2019s Encryption Backlash",
-      "narration": "Instagram\u2019s decision to drop chat encryption has users and privacy advocates outraged. Without protection, your messages are vulnerable to hackers and snoops. Is this the end of private conversations on social media? We break down the risks and alternatives you need to know."
+      "headline": "Meta\u2019s AI Struggles: Vibes and Delays",
+      "narration": "Meta\u2019s AI ambitions hit a roadblock as performance concerns delay their new model. With Vibes as their sole product, can they compete with giants like OpenAI? The stakes have never been higher."
     },
     {
-      "headline": "Motorola\u2019s Folding Phone War",
-      "narration": "Motorola\u2019s Razr Fold enters the competitive book-style foldable market, but the Razr Ultra 2025 steals the show with its recent price cut. Which phone offers the best value? We compare specs, durability, and performance to help you decide."
+      "headline": "Iran\u2019s Space Dreams Derailed by Strikes",
+      "narration": "Satellite imagery confirms heavy damage to Iran\u2019s Space Research Centre after recent strikes. This blow could stall their tech aspirations for years. Geopolitics meets the final frontier\u2014what\u2019s next?"
     },
     {
-      "headline": "Peaky Blinders Movie: What to Expect",
-      "narration": "The Peaky Blinders saga continues with a Netflix movie starring Cillian Murphy and Barry Keoghan. Fans can expect the same gritty violence and drama. How will the story unfold? We preview the plot, cast, and release details."
+      "headline": "Samsung vs. Chrome: The Browser Battle Heats Up",
+      "narration": "Samsung Browser\u2019s upcoming AI and multitasking features aim to challenge Chrome\u2019s dominance. With 3.8 billion users, can Samsung carve out its space? The browser wars are back!"
     },
     {
-      "headline": "Lawyers\u2019 AI Anxiety Exposed",
-      "narration": "At a marathon legal conference, lawyers revealed their biggest fears about AI. With billions at stake, why are so many hesitant to adopt it? Will AI replace human judgment? We uncover the truth behind the resistance."
+      "headline": "Fed\u2019s Dilemma: Rates, War, and Economic Uncertainty",
+      "narration": "As the Fed holds rates steady, the Iran conflict sends shockwaves through global markets. Oil prices, inflation, and growth hang in the balance. Can policymakers steer through the chaos?"
     },
     {
-      "headline": "OpenAI Chairman\u2019s Code Crisis",
-      "narration": "OpenAI\u2019s chairman struggles to let AI write his code\u2014a skill that defined his career. His emotional conflict reflects a broader societal dilemma: can we trust AI with our passions? We delve into the human side of automation."
+      "headline": "GreenBoost: Supercharging GPUs for AI\u2019s Future",
+      "narration": "This open-source Linux module lets NVIDIA GPUs tap into system RAM and NVMe storage, unlocking larger AI models. A game-changer for developers\u2014here\u2019s how it works."
     },
     {
-      "headline": "Nvidia\u2019s AI Chip Monopoly Challenged",
-      "narration": "Nvidia\u2019s dominance in AI chips faces threats from Google, startups, and China. With evolving workloads and geopolitical tensions, the competition is fiercer than ever. Who has the edge? We analyze the players shaping the future of AI hardware."
+      "headline": "Kernel Anti-Cheats: Gaming\u2019s Double-Edged Sword",
+      "narration": "These ultra-powerful systems protect games from cheaters but operate at kernel level\u2014raising privacy and security concerns. Are they worth the risk? We break it down."
     },
     {
-      "headline": "Why AI Posts Fail on LinkedIn",
-      "narration": "Steven Bartlett\u2019s experiment proved human-written LinkedIn posts outperform AI-generated ones. What does this say about authenticity in the age of automation? We explore why human touch still matters in digital communication."
+      "headline": "Employee Rights vs. Corporate Realities: A Court\u2019s Verdict",
+      "narration": "The Delhi High Court\u2019s ruling against a brain tumor survivor sparks debate over worker protections. A harsh reminder of the clash between compassion and business."
     },
     {
-      "headline": "The Rise of the Megamanager",
-      "narration": "Chine Mmegwa went from managing 3 employees to 24, embodying Corporate America\u2019s shift toward megamanagers. As companies cut middle layers, what does this mean for workplace dynamics? We examine the pros and cons of this growing trend."
+      "headline": "AI, Chips, and Wall Street\u2019s Next Big Bet",
+      "narration": "With AI chip sales forecast to hit $100+ billion, Broadcom and others are riding the wave. How will this tech gold rush reshape the market? The numbers don\u2019t lie."
     }
   ]
 }
