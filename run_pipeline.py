@@ -20,9 +20,9 @@ for step in steps:
     print(f"\n🚀 Running: {step}\n")
     subprocess.run(step, shell=True)
 
-send_email(
-    "SUCCESS",
-    "AI news bot ran successfully and uploaded video."
-)
+# send_email(
+#     "SUCCESS",
+#     "AI news bot ran successfully and uploaded video."
+# )
 
 print("\n✅ ALL SHORTS UPLOADED SUCCESSFULLY")
