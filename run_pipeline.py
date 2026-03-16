@@ -1,5 +1,5 @@
 import subprocess
-from email_notifier import send_email
+#from email_notifier import send_email
 
 
 steps = [
