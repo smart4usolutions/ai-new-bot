@@ -2,87 +2,87 @@
   "shorts": [
     [
       {
-        "headline": "Will AI End Coding As We Know It?",
-        "narration": "Tech journalist Clive Thompson interviewed 70+ devs at Google, Amazon, and Microsoft. His explosive conclusion? AI is reshaping programming forever. 'Coding After Coders'\u2014could this be the future? Stay ahead of the curve! Follow for daily AI updates."
+        "headline": "AI to End Coding as We Know It?",
+        "narration": "Could AI spell the end for human coders? Tech journalist Clive Thompson interviewed 70+ devs at top firms for his explosive article 'Coding After Coders.' The future of programming might look very different. Follow for daily AI updates!"
       },
       {
-        "headline": "Hidden Deep-Sea Proteins Supercharge Tests",
-        "narration": "Scientists discovered ultra-tough DNA-binding proteins in volcanic lakes and deep-sea vents. These molecules survive extreme heat, salt, and chemicals\u2014revolutionizing disease detection. Nature\u2019s secrets might just save lives! Follow for daily AI updates."
+        "headline": "Wall Street Bets Big on Broadcom\u2019s AI Chips",
+        "narration": "Broadcom (AVGO) is soaring as Wall Street predicts $100+ billion in AI chip sales. Investors are all in\u2014could this be the next big play in the AI boom? Follow for daily AI updates!"
       },
       {
-        "headline": "Meta Delays AI Model Over Performance Issues",
-        "narration": "Meta\u2019s new AI division hit a snag\u2014delaying its rollout due to performance concerns. Their only product so far? Vibes, an AI video app like OpenAI\u2019s Sora. Will they bounce back? Follow for daily AI updates."
+        "headline": "Deep-Sea Proteins Supercharge Medical Tests",
+        "narration": "Scientists found ultra-tough DNA-binding proteins in volcanic lakes and deep-sea vents. These could revolutionize disease testing\u2014nature\u2019s secrets unlocking medical breakthroughs! Follow for daily AI updates!"
       }
     ],
     [
       {
-        "headline": "Iran\u2019s Space Research Centre Damaged in Strikes",
-        "narration": "Video footage reveals severe damage to Iran\u2019s Space Research Centre after Israeli-US strikes. The fallout could reshape regional tech ambitions. Geopolitics meets space race\u2014stay tuned! Follow for daily AI updates."
+        "headline": "Kernel Anti-Cheat: Gaming\u2019s Secret Weapon",
+        "narration": "Modern anti-cheat systems are some of the most advanced software on your PC, operating at the highest privilege level. Cheaters, beware\u2014the tech is watching! Follow for daily AI updates!"
       },
       {
-        "headline": "Samsung Browser Gets AI Boost in One UI 9",
-        "narration": "Samsung Browser is leveling up with multitasking and AI features in One UI 9. With Chrome dominating, can Samsung carve its niche? The browser wars heat up! Follow for daily AI updates."
+        "headline": "Iran\u2019s Space Centre Hit in Strikes",
+        "narration": "Video shows heavy damage at Iran\u2019s Space Research Centre after Israeli-US strikes. The fallout could reshape regional tech and defense. Follow for daily AI updates!"
+      },
+      {
+        "headline": "Samsung Browser Gets AI Upgrade",
+        "narration": "Samsung Browser is leveling up with multitasking and AI features in One UI 9. Chrome\u2019s dominance might finally face a real challenger! Follow for daily AI updates!"
+      }
+    ],
+    [
+      {
+        "headline": "Meta Delays AI Model Over Performance Issues",
+        "narration": "Meta hit pause on its new AI model after concerns\u2014its only release so far is Vibes, a Sora-like video app. Is the AI race getting too fast? Follow for daily AI updates!"
       },
       {
         "headline": "Fed Holds Rates as Iran War Roils Markets",
-        "narration": "The US Fed is expected to hold rates steady amid Iran war chaos. Oil prices and market uncertainty loom large. Will policymakers navigate the storm? Follow for daily AI updates."
-      }
-    ],
-    [
-      {
-        "headline": "Open-Source Tool Supercharges NVIDIA GPUs for LLMs",
-        "narration": "GreenBoost\u2014an open-source Linux module\u2014augments NVIDIA GPU memory with system RAM and NVMe storage. The goal? Run larger AI models effortlessly. Innovation at its finest! Follow for daily AI updates."
+        "narration": "The US Fed is expected to keep rates steady amid Iran war chaos. Oil prices and economic uncertainty are forcing a cautious stance. Follow for daily AI updates!"
       },
       {
-        "headline": "Kernel Anti-Cheats: Gaming\u2019s Secret Guardians",
-        "narration": "Modern kernel anti-cheats are ultra-sophisticated, operating at the highest privilege level in Windows. They\u2019re the invisible shield keeping games fair. But at what cost? Follow for daily AI updates."
-      },
-      {
-        "headline": "Court Upholds Firing After Brain Tumor Leave",
-        "narration": "Delhi High Court ruled against a director terminated post-brain tumor surgery, stating no right to a 3-year leave. A harsh reality check for employee rights. Follow for daily AI updates."
+        "headline": "Open-Source Tool Boosts NVIDIA GPU Power",
+        "narration": "GreenBoost, an open-source Linux tool, supercharges NVIDIA GPUs by using system RAM and NVMe storage. Bigger AI models just got more accessible! Follow for daily AI updates!"
       }
     ]
   ],
   "long_video": [
     {
-      "headline": "AI\u2019s Takeover of Programming: The Clive Thompson Report",
-      "narration": "Tech journalist Clive Thompson\u2019s groundbreaking interviews with 70+ developers reveal a seismic shift\u2014AI is rewriting the rules of coding. From Google to startups, the consensus is clear: programming will never be the same. Dive into the future of tech with us."
+      "headline": "AI\u2019s Threat to Traditional Coding Jobs",
+      "narration": "Tech journalist Clive Thompson\u2019s explosive article 'Coding After Coders' reveals AI\u2019s growing role in software development. After interviewing 70+ devs at Google, Amazon, and more, he predicts a seismic shift\u2014could AI make human coders obsolete? The debate is heating up!"
     },
     {
-      "headline": "Deep-Sea Proteins: The Next Medical Breakthrough?",
-      "narration": "Hidden in Earth\u2019s most extreme environments, scientists uncovered ultra-resilient DNA-binding proteins. These discoveries could revolutionize disease testing, offering stability under brutal conditions. How will this reshape medicine? Let\u2019s explore."
+      "headline": "Broadcom\u2019s $100B AI Chip Dream",
+      "narration": "Wall Street is buzzing over Broadcom\u2019s (AVGO) AI chip potential, with forecasts topping $100 billion in sales. As demand for AI hardware skyrockets, could this be the next NVIDIA? Investors are betting big."
+    },
+    {
+      "headline": "The Science Behind Kernel Anti-Cheat",
+      "narration": "Modern kernel anti-cheat systems are marvels of software engineering, operating at the highest privilege level to stop hackers. From intercepting kernel calls to deep system scans, these tools are gaming\u2019s last line of defense."
+    },
+    {
+      "headline": "Extreme Proteins Revolutionize Medicine",
+      "narration": "Scientists discovered ultra-stable DNA-binding proteins in deep-sea vents and volcanic lakes. These heat-resistant molecules could transform disease testing, offering new hope for faster, more reliable diagnostics."
+    },
+    {
+      "headline": "Fallout from Iran\u2019s Space Centre Strike",
+      "narration": "New footage shows severe damage at Iran\u2019s Space Research Centre after Israeli-US strikes. The attack could delay Tehran\u2019s space ambitions and escalate tech tensions in the region."
+    },
+    {
+      "headline": "Samsung Browser\u2019s AI-Powered Future",
+      "narration": "Samsung Browser is getting a major upgrade with One UI 9, adding AI features and multitasking. With Chrome dominating the market, can Samsung\u2019s innovations carve out a new niche?"
     },
     {
       "headline": "Meta\u2019s AI Struggles: Vibes and Delays",
-      "narration": "Meta\u2019s AI ambitions hit a roadblock as performance concerns delay their new model. With Vibes as their sole product, can they compete with giants like OpenAI? The stakes have never been higher."
+      "narration": "Meta delayed its new AI model over performance concerns, leaving Vibes\u2014its Sora-like video app\u2014as its sole release. Is the company falling behind in the AI race?"
     },
     {
-      "headline": "Iran\u2019s Space Dreams Derailed by Strikes",
-      "narration": "Satellite imagery confirms heavy damage to Iran\u2019s Space Research Centre after recent strikes. This blow could stall their tech aspirations for years. Geopolitics meets the final frontier\u2014what\u2019s next?"
+      "headline": "Fed\u2019s Rate Dilemma Amid Iran Conflict",
+      "narration": "The US Fed is expected to hold rates steady as the Iran war disrupts markets. With oil prices volatile and growth slowing, policymakers face a tough balancing act."
     },
     {
-      "headline": "Samsung vs. Chrome: The Browser Battle Heats Up",
-      "narration": "Samsung Browser\u2019s upcoming AI and multitasking features aim to challenge Chrome\u2019s dominance. With 3.8 billion users, can Samsung carve out its space? The browser wars are back!"
+      "headline": "GreenBoost: NVIDIA\u2019s Open-Source Boost",
+      "narration": "The open-source GreenBoost tool enhances NVIDIA GPUs by tapping into system RAM and NVMe storage. This could democratize access to larger AI models, shaking up the tech landscape."
     },
     {
-      "headline": "Fed\u2019s Dilemma: Rates, War, and Economic Uncertainty",
-      "narration": "As the Fed holds rates steady, the Iran conflict sends shockwaves through global markets. Oil prices, inflation, and growth hang in the balance. Can policymakers steer through the chaos?"
-    },
-    {
-      "headline": "GreenBoost: Supercharging GPUs for AI\u2019s Future",
-      "narration": "This open-source Linux module lets NVIDIA GPUs tap into system RAM and NVMe storage, unlocking larger AI models. A game-changer for developers\u2014here\u2019s how it works."
-    },
-    {
-      "headline": "Kernel Anti-Cheats: Gaming\u2019s Double-Edged Sword",
-      "narration": "These ultra-powerful systems protect games from cheaters but operate at kernel level\u2014raising privacy and security concerns. Are they worth the risk? We break it down."
-    },
-    {
-      "headline": "Employee Rights vs. Corporate Realities: A Court\u2019s Verdict",
-      "narration": "The Delhi High Court\u2019s ruling against a brain tumor survivor sparks debate over worker protections. A harsh reminder of the clash between compassion and business."
-    },
-    {
-      "headline": "AI, Chips, and Wall Street\u2019s Next Big Bet",
-      "narration": "With AI chip sales forecast to hit $100+ billion, Broadcom and others are riding the wave. How will this tech gold rush reshape the market? The numbers don\u2019t lie."
+      "headline": "Delhi Court Upholds Job Termination Post-Brain Tumor",
+      "narration": "The Delhi High Court ruled against a former director seeking a 3-year leave after brain tumor surgery, citing no legal right. The case sparks debate over employee rights and health accommodations."
     }
   ]
 }

@@ -29,5 +29,11 @@ jobs:
           echo "OPENROUTER_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> .env
           echo "NEWS_API_KEY=${{ secrets.NEWS_API_KEY }}" >> .env      
 
+      - name: Create client_secret.json
+        run: echo '${{ secrets.CLIENT_SECRET }}' > client_secret.json
+
+      - name: Create token.json
+        run: echo '${{ secrets.TOKEN_JSON }}' > token.json          
+
       - name: Run pipeline
         run: python run_pipeline.py
