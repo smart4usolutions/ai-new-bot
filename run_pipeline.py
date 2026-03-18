@@ -1,12 +1,9 @@
 import subprocess
-#from email_notifier import send_email
 import os
-
-folders = ["data", "videos", "subtitles", "audio", "images"]
-
-for folder in folders:
-    os.makedirs(folder, exist_ok=True)
-
+#from email_notifier import send_email
+os.makedirs("audio", exist_ok=True)
+os.makedirs("videos", exist_ok=True)
+os.makedirs("data", exist_ok=True)
 
 
 steps = [
