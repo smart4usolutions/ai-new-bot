@@ -2,8 +2,10 @@ import os
 import subprocess
 
 # Piper settings
-PIPER_PATH = r"C:\Users\Dell\OneDrive\Desktop\ai_news_automation\piper\piper.exe"
-VOICE_MODEL = r"C:\Users\Dell\OneDrive\Desktop\ai_news_automation\piper\en_US-lessac-medium.onnx"
+#PIPER_PATH = r"C:\Users\Dell\OneDrive\Desktop\ai_news_automation\piper\piper.exe"
+#VOICE_MODEL = r"C:\Users\Dell\OneDrive\Desktop\ai_news_automation\piper\en_US-lessac-medium.onnx"
+PIPER_PATH = "piper"
+VOICE_MODEL = "en_US-lessac-medium.onnx"
 
 scripts_folder = "scripts"
 audio_folder = "audio"
