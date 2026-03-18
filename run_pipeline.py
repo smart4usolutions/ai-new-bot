@@ -16,8 +16,7 @@ steps = [
      "python image_downloader.py",
      "python news_template.py",
      "python shorts_video_generator.py",
-    # "python youtube_uploader.py"
-
+     "python youtube_uploader.py"
 ]
 
 for step in steps:
