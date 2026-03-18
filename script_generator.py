@@ -89,6 +89,7 @@ response = requests.post(
 )
 
 result = response.json()
+print(result)
 
 content = result["choices"][0]["message"]["content"]
 
