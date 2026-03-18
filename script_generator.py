@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+print("API KEY:", os.getenv("OPENROUTER_API_KEY"))
 
 # Load filtered news
 with open("data/filtered_news.json", "r", encoding="utf-8") as f:
