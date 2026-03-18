@@ -31,7 +31,7 @@ for i, file in enumerate(scripts, start=1):
     try:
         audio = client.text_to_speech.convert(
             text=text,
-            voice_id="21m00Tcm4TlvDq8ikWAM",  # Rachel voice
+            voice_id="EXAVITQu4vr4xnSDxMaL",  # default voice
             model_id="eleven_turbo_v2"
         )
 
