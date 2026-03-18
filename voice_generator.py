@@ -31,8 +31,8 @@ for i, file in enumerate(scripts, start=1):
     try:
         audio = client.text_to_speech.convert(
             text=text,
-            voice_id="EXAVITQu4vr4xnSDxMaL",  # Rachel voice
-            model_id="eleven_turbo_v2"
+            voice_id="21m00Tcm4TlvDq8ikWAM",  # Rachel voice
+            model_id="eleven_monolingual_v1"
         )
 
         output_file = f"audio/short{i}.mp3"
