@@ -52,6 +52,7 @@ today = date.today()
 
 for video in videos:
     video_file = os.path.join(video_folder, video)
+    i= 1
 
     try:
         print(f"⬆ Uploading: {video_file}")
@@ -60,7 +61,7 @@ for video in videos:
             part="snippet,status",
             body={
                 "snippet": {
-                    "title": f"Daily AI News {today} #Shorts #AI",
+                    "title": f"Daily AI News #{i} {today} #Shorts #AI",
                     "description": "Latest AI news in 60 seconds 🚀\n\n#AI #TechNews #Shorts",
                     "tags": ["AI", "Artificial Intelligence", "Tech News"],
                     "categoryId": "28"
@@ -82,12 +83,14 @@ for video in videos:
 
         uploaded_links.append(video_url)
         log_upload(video_file, "SUCCESS", video_url)
+        i += 1
 
     except Exception as e:
         print(f"❌ Failed: {video_file}")
         print(str(e))
 
         log_upload(video_file, "FAILED", str(e))
+    
 
 # ---------------- SAVE LINKS ---------------- #
 with open("uploaded_links.txt", "a") as f:
