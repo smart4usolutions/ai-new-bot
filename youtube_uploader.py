@@ -49,10 +49,11 @@ if not videos:
     exit()
 
 today = date.today()
+i=0
 
 for video in videos:
     video_file = os.path.join(video_folder, video)
-    i= 1
+    i+=1
 
     try:
         print(f"⬆ Uploading: {video_file}")

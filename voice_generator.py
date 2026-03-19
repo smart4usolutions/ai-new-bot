@@ -17,7 +17,7 @@ async def generate_audio():
         communicate = edge_tts.Communicate(
             text=text,
             voice="en-US-AriaNeural",
-            rate="+5%",       # slightly faster (good for reels)
+            rate="+8%",       # slightly faster (good for reels)
             pitch="+2Hz"
         )
 
