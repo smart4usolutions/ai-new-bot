@@ -67,5 +67,6 @@ for i in range(1,4):
     ]
 
     subprocess.run(command)
+    print("Video Created.")
 
 print("✅ Shorts videos generated")
