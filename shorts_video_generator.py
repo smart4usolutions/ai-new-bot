@@ -7,21 +7,33 @@ output_folder = "videos"
 
 os.makedirs(output_folder, exist_ok=True)
 
-def get_audio_duration(audio_file):
+import subprocess
 
+def get_audio_duration(audio_file):
     result = subprocess.run(
         [
             "ffprobe",
-            "-v","error",
-            "-show_entries","format=duration",
-            "-of","default=noprint_wrappers=1:nokey=1",
+            "-v", "error",
+            "-show_entries", "format=duration",
+            "-of", "default=noprint_wrappers=1:nokey=1",
             audio_file
         ],
         stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT
+        stderr=subprocess.PIPE
     )
 
-    return float(result.stdout)
+    output = result.stdout.decode().strip()
+
+    if not output:
+        print("❌ ffprobe error:", result.stderr.decode())
+        return 0
+
+    try:
+        return float(output)
+    except ValueError:
+        print("❌ Invalid duration output:", output)
+        return 0
+
 
 for i in range(1,4):
 
