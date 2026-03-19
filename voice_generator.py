@@ -5,7 +5,12 @@ import os
 async def generate_audio():
     os.makedirs("audio", exist_ok=True)
 
-    scripts = sorted([f for f in os.listdir("scripts") if f.endswith(".txt")])
+    scripts = [
+    "short1_voice.txt",
+    "short2_voice.txt",
+    "short3_voice.txt",
+    "long_video_voice.txt"
+]
 
     for i, file in enumerate(scripts, start=1):
         with open(f"scripts/{file}", "r", encoding="utf-8") as f:

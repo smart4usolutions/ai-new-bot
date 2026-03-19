@@ -84,7 +84,6 @@ for video in videos:
 
         uploaded_links.append(video_url)
         log_upload(video_file, "SUCCESS", video_url)
-        i += 1
 
     except Exception as e:
         print(f"❌ Failed: {video_file}")
