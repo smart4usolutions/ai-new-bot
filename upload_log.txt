@@ -10,3 +10,9 @@
 2026-03-19 15:02:27.884694 | videos\short1.mp4 | SUCCESS | https://www.youtube.com/watch?v=L0pkHJkJ9ro
 2026-03-19 15:02:37.933140 | videos\short2.mp4 | SUCCESS | https://www.youtube.com/watch?v=gdDH8RgwP8E
 2026-03-19 15:02:45.972919 | videos\short3.mp4 | SUCCESS | https://www.youtube.com/watch?v=feTBKBbim3o
+2026-03-21 21:33:57.214965 | videos\short1.mp4 | SUCCESS | https://www.youtube.com/watch?v=kRLo2eMNch0
+2026-03-21 21:34:02.581938 | videos\short2.mp4 | SUCCESS | https://www.youtube.com/watch?v=2B-XBr6oe04
+2026-03-21 21:34:09.406505 | videos\short3.mp4 | SUCCESS | https://www.youtube.com/watch?v=ZIsvorxZWD8
+2026-03-21 21:44:01.068854 | videos\short1.mp4 | SUCCESS | https://www.youtube.com/watch?v=btqeucitbo8
+2026-03-21 21:44:03.610256 | videos\short2.mp4 | SUCCESS | https://www.youtube.com/watch?v=sK5ZWit4pD8
+2026-03-21 21:44:06.267766 | videos\short3.mp4 | SUCCESS | https://www.youtube.com/watch?v=Y2A8yI1TIy8
