@@ -46,7 +46,7 @@ for i in range(1,4):
 
     command = [
         #"bin/ffmpeg.exe",
-        "ffmpeg"
+        "ffmpeg",
 
         "-loop","1","-t",str(img_duration),"-i",img1,
         "-loop","1","-t",str(img_duration),"-i",img2,
