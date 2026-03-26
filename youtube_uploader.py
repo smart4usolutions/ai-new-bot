@@ -51,6 +51,7 @@ if not videos:
 today = date.today()
 i=0
 
+
 for video in videos:
     video_file = os.path.join(video_folder, video)
     i+=1
@@ -62,7 +63,7 @@ for video in videos:
             part="snippet,status",
             body={
                 "snippet": {
-                    "title": f"Daily AI News #{i} {today} #Shorts #AI",
+                    "title": f"Daily AI News #{i} #Shorts #AI #Tech",
                     "description": "Latest AI news in 60 seconds 🚀\n\n#AI #TechNews #Shorts",
                     "tags": ["AI", "Artificial Intelligence", "Tech News"],
                     "categoryId": "28"
