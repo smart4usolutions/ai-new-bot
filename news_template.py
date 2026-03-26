@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 import json
 import textwrap
+from PIL import Image
 
 input_folder = "news_images"
 output_folder = "formatted_images"
@@ -17,7 +18,25 @@ with open("data/filtered_news.json","r",encoding="utf-8") as f:
 for i in range(1,10):
 
     img = Image.open(f"{input_folder}/news{i}.jpg").convert("RGBA")
-    img = img.resize((1080,1920))
+
+    target_w, target_h = 1080, 1920
+    target_ratio = target_w / target_h
+    img_ratio = img.width / img.height
+
+    if img_ratio > target_ratio:
+        # Image is wider → crop width
+        new_width = int(img.height * target_ratio)
+        left = (img.width - new_width) // 2
+        img = img.crop((left, 0, left + new_width, img.height))
+    else:
+        # Image is taller → crop height
+        new_height = int(img.width / target_ratio)
+        top = (img.height - new_height) // 2
+        img = img.crop((0, top, img.width, top + new_height))
+
+    # Now resize safely
+    img = img.resize((1080, 1920), Image.LANCZOS)
+
 
     overlay = Image.new("RGBA", img.size, (0,0,0,0))
     draw = ImageDraw.Draw(overlay)

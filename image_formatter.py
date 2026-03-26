@@ -16,7 +16,7 @@ for file in os.listdir(input_folder):
         command = [
             "ffmpeg",
             "-i", input_path,
-            "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920",
+            "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:(iw-1080)/2:(ih-1920)/2",
             "-y",
             output_path
         ]
