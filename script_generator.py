@@ -77,6 +77,9 @@ News:
 
 {news_text}
 """
+print("API KEY LOADED:", bool(OPENROUTER_API_KEY))
+if not OPENROUTER_API_KEY:
+    raise ValueError("❌ OPENROUTER_API_KEY is missing!")
 
 response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
