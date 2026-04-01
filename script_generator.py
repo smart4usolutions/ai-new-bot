@@ -82,7 +82,7 @@ response = requests.post(
         "Content-Type": "application/json"
     },
     json={
-        "model": "deepseek/deepseek-chat",
+        "model": "qwen/qwen3.6-plus-preview:free",
         "messages": [
             {"role": "user", "content": prompt}
         ]
@@ -91,7 +91,14 @@ response = requests.post(
 
 result = response.json()
 
-content = result["choices"][0]["message"]["content"]
+if "choices" in result:
+    content = result["choices"][0]["message"]["content"]
+    content = content.strip().replace("```json", "").replace("```", "")
+    print("\nRAW RESPONSE FROM MODEL:\n")
+    print(content)
+else:
+    print("❌ API Error:", result)
+    content = None
 
 print("\nRAW RESPONSE FROM MODEL:\n")
 # print(content)
