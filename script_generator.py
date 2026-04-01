@@ -82,7 +82,7 @@ response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
         "HTTP-Referer": "https://github.com/smart4usolutions",  # optional but recommended
         "X-Title": "AI News Bot"
         
