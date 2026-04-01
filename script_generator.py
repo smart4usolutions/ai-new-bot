@@ -87,7 +87,9 @@ response = requests.post(
         "model": "qwen/qwen3.6-plus-preview:free",
         "messages": [
             {"role": "user", "content": prompt}
-        ]
+        ],
+        "response_format": {"type": "json_object"},
+        
     }
 )
 
@@ -102,26 +104,34 @@ else:
     print("❌ API Error:", result)
     content = None
 
-print("\nRAW RESPONSE FROM MODEL:\n")
-# print(content)
 
-# Clean markdown
-content = content.strip().replace("```json", "").replace("```", "")
+def clean_json(text):
+    text = text.strip()
+
+    # Remove markdown
+    if text.startswith("```"):
+        text = text.split("```")[1]
+
+    # Remove json label
+    text = text.replace("json\n", "").replace("json", "")
+
+    # Trim before first { and after last }
+    start = text.find("{")
+    end = text.rfind("}") + 1
+
+    return text[start:end]
+
+
+content = clean_json(content)
 
 try:
     scripts = json.loads(content)
-
-except json.JSONDecodeError:
-    print("❌ JSON parsing failed")
-
-    os.makedirs("scripts", exist_ok=True)
+except json.JSONDecodeError as e:
+    print("❌ JSON parsing failed:", e)
 
     with open("scripts/debug_response.txt", "w", encoding="utf-8") as f:
         f.write(content)
-
-    print("Raw response saved to scripts/debug_response.txt")
     exit()
-
 
 # Ensure scripts folder exists
 os.makedirs("scripts", exist_ok=True)
