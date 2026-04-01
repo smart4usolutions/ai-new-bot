@@ -126,6 +126,7 @@ content = clean_json(content)
 
 try:
     scripts = json.loads(content)
+    print("✔️ JSON parsing Done")
 except json.JSONDecodeError as e:
     print("❌ JSON parsing failed:", e)
 
