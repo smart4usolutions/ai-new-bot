@@ -83,6 +83,9 @@ response = requests.post(
     headers={
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
         "Content-Type": "application/json"
+        "HTTP-Referer": "https://github.com/smart4usolutions",  # optional but recommended
+        "X-Title": "AI News Bot"
+        
     },
     json={
         "model": "qwen/qwen3.6-plus-preview:free",
@@ -90,11 +93,20 @@ response = requests.post(
             {"role": "user", "content": prompt}
         ],
         "response_format": {"type": "json_object"},
-        
     }
 )
+if response.status_code != 200:
+    print("❌ HTTP Error:", response.status_code)
+    print(response.text)
+    exit()
 
-result = response.json()
+try:
+    result = response.json()
+except Exception:
+    print("❌ Failed to parse JSON")
+    print("Status Code:", response.status_code)
+    print("Raw Response:\n", response.text)
+    exit()
 
 if "choices" in result:
     content = result["choices"][0]["message"]["content"]
