@@ -14,8 +14,8 @@ def get_audio_duration(audio_file):
 
     result = subprocess.run(
         [
-            "bin/ffprobe.exe",
-            #"ffprobe",
+            #"bin/ffprobe.exe",
+            "ffprobe",
             "-v","error",
             "-show_entries","format=duration",
             "-of","default=noprint_wrappers=1:nokey=1",
@@ -48,8 +48,8 @@ for i in range(1,4):
     
 
     command = [
-        "bin/ffmpeg.exe",
-        #"ffmpeg",
+        #"bin/ffmpeg.exe",
+        "ffmpeg",
 
         "-loop","1","-t",str(img_duration),"-i",img1,
         "-loop","1","-t",str(img_duration),"-i",img2,
