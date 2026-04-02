@@ -2,7 +2,9 @@ import json
 import os
 import requests
 from dotenv import load_dotenv
+from datetime import datetime
 
+timestamp = datetime.now().strftime("%Y-%m-%d")
 load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
@@ -67,7 +69,8 @@ Rules:
 Shorts narration = about 40-50 words each  
 Long video narration = about 60 words each  
 Narration should NOT include instructions like Hook or Scene.
-Add this line at last = follow for daily ai updates.
+Translate narration in Hindi.
+Add this line at last = follow for daily global updates.
 Larration should start with catchy hook as it is youtube shorts
 Make it engaging, fast-paced, and conversational.
 Start with a hook. Avoid robotic tone.
@@ -163,7 +166,7 @@ for i, short in enumerate(scripts["shorts"], start=1):
     for news in short:
         narration_text += news["narration"] + " "
 
-    with open(f"scripts/short{i}_voice.txt", "w", encoding="utf-8") as f:
+    with open(f"scripts/short{i}_voice_{timestamp}.txt", "w", encoding="utf-8") as f:
         f.write(narration_text.strip())
 
 

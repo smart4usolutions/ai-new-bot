@@ -16,3 +16,6 @@
 2026-03-21 21:44:01.068854 | videos\short1.mp4 | SUCCESS | https://www.youtube.com/watch?v=btqeucitbo8
 2026-03-21 21:44:03.610256 | videos\short2.mp4 | SUCCESS | https://www.youtube.com/watch?v=sK5ZWit4pD8
 2026-03-21 21:44:06.267766 | videos\short3.mp4 | SUCCESS | https://www.youtube.com/watch?v=Y2A8yI1TIy8
+2026-04-01 16:46:56.179010 | videos\short1.mp4 | SUCCESS | https://www.youtube.com/watch?v=ccICL_0HqLE
+2026-04-01 16:47:01.038262 | videos\short2.mp4 | SUCCESS | https://www.youtube.com/watch?v=VOyKzY4Wehs
+2026-04-01 16:47:04.598702 | videos\short3.mp4 | SUCCESS | https://www.youtube.com/watch?v=AzFhJKfNp-Q

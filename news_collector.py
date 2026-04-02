@@ -13,7 +13,8 @@ yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
 url = "https://newsapi.org/v2/everything"
 
 params = {
-    "q": "AI OR artificial intelligence OR ChatGPT OR OpenAI",
+    #"q": "artificial intelligence OR Technology OR Science OR Global",
+    "q": "india",
     "from": yesterday,
     "sortBy": "popularity",
     "language": "en",
