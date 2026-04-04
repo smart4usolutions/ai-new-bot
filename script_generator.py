@@ -91,7 +91,7 @@ response = requests.post(
         
     },
     json={
-        "model": "qwen/qwen3.6-plus-preview:free",
+        "model": "qwen/qwen3.6-plus:free",
         "messages": [
             {"role": "user", "content": prompt}
         ],
