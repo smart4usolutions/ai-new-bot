@@ -48,26 +48,13 @@ Structure:
    {{"headline":"", "narration":""}},
    {{"headline":"", "narration":""}}
   ]
- ],
-
- "long_video":[
-  {{"headline":"", "narration":""}},
-  {{"headline":"", "narration":""}},
-  {{"headline":"", "narration":""}},
-  {{"headline":"", "narration":""}},
-  {{"headline":"", "narration":""}},
-  {{"headline":"", "narration":""}},
-  {{"headline":"", "narration":""}},
-  {{"headline":"", "narration":""}},
-  {{"headline":"", "narration":""}},
-  {{"headline":"", "narration":""}}
  ]
+
 }}
 
 Rules:
 
 Shorts narration = about 40-50 words each  
-Long video narration = about 60 words each  
 Narration should NOT include instructions like Hook or Scene.
 
 Add this line at last of every 3rd narration = follow for daily global updates.
