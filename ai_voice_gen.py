@@ -1,8 +1,10 @@
 import requests
 import time
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 WAVESPEED_API_KEY = os.getenv("WAVESPEED_API_KEY")
+
 
 def generate_ai_audio(script_text, output_file):
 
