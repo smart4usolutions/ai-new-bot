@@ -2,56 +2,94 @@ import json
 import os
 import requests
 from bs4 import BeautifulSoup
+from PIL import Image, UnidentifiedImageError
+from io import BytesIO
+import shutil
 
+# ----------------------------
+# CONFIG
+# ----------------------------
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+}
+
+DEFAULT_IMAGE_PATH = "assets/default_news.png"
+OUTPUT_FOLDER = "news_images"
+
+os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+
+# ----------------------------
+# LOAD NEWS
+# ----------------------------
 with open("data/filtered_news.json", "r", encoding="utf-8") as f:
     news = json.load(f)
 
-os.makedirs("news_images", exist_ok=True)
+# ----------------------------
+# FUNCTION: VALIDATE IMAGE
+# ----------------------------
+def is_valid_image(content):
+    try:
+        img = Image.open(BytesIO(content))
+        img.verify()  # check if valid image
+        return True
+    except Exception:
+        return False
 
+# ----------------------------
+# MAIN LOOP
+# ----------------------------
 for i, article in enumerate(news, start=1):
 
+    file_path = f"{OUTPUT_FOLDER}/news{i}.jpg"
     article_url = article.get("url")
 
-    if not article_url:
-        print(f"No article url for news {i}")
-        continue
-
     try:
-        page = requests.get(article_url, timeout=10)
+        # ----------------------------
+        # STEP 1: FETCH ARTICLE PAGE
+        # ----------------------------
+        if not article_url:
+            raise Exception("No article URL")
+
+        page = requests.get(article_url, headers=HEADERS, timeout=10)
         soup = BeautifulSoup(page.text, "html.parser")
 
-        # find og:image
+        # ----------------------------
+        # STEP 2: GET IMAGE URL
+        # ----------------------------
         tag = soup.find("meta", property="og:image")
 
-        if tag and tag.get("content"):
+        if not tag or not tag.get("content"):
+            raise Exception("No og:image found")
 
-            image_url = tag["content"]
+        image_url = tag["content"]
 
-            img = requests.get(image_url, timeout=10)
+        # ----------------------------
+        # STEP 3: DOWNLOAD IMAGE
+        # ----------------------------
+        img_response = requests.get(image_url, headers=HEADERS, timeout=10)
 
-            file_path = f"news_images/news{i}.jpg"
+        if img_response.status_code != 200:
+            raise Exception("Image download failed")
 
-            with open(file_path, "wb") as f:
-                f.write(img.content)
+        # ----------------------------
+        # STEP 4: VALIDATE IMAGE
+        # ----------------------------
+        if not is_valid_image(img_response.content):
+            raise Exception("Invalid image content")
 
-            print(f"Downloaded image for news {i}")
+        # ----------------------------
+        # STEP 5: SAVE IMAGE
+        # ----------------------------
+        with open(file_path, "wb") as f:
+            f.write(img_response.content)
 
-        else:
-            print(f"No image found for news {i}, using default image")
-
-            with open("assets/default_news.png", "rb") as f:
-                default_img = f.read()
-
-            with open(f"news_images/news{i}.jpg", "wb") as f:
-                f.write(default_img)
-
+        print(f"✅ Downloaded valid image for news {i}")
 
     except Exception as e:
-        print(f"Error processing news {i}: {e}")
+        print(f"⚠️ Error for news {i}: {e}")
+        print(f"🖼️ Using default image for news {i}")
 
-        with open("assets/default_news.png", "rb") as f:
-                default_img = f.read()
-
-        with open(f"news_images/news{i}.jpg", "wb") as f:
-            f.write(default_img)
-            print(f"No image fetch for news {i}, using default image")
+        try:
+            shutil.copy(DEFAULT_IMAGE_PATH, file_path)
+        except Exception as copy_error:
+            print(f"❌ Failed to copy default image: {copy_error}")
