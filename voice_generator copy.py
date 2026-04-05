@@ -1,4 +1,5 @@
 import asyncio
+import edge_tts
 import os
 from datetime import datetime
 from ai_voice_gen import generate_ai_audio
@@ -21,12 +22,18 @@ async def generate_audio():
 
         output_file = f"audio/short{i}_{timestamp}.mp3"
 
-        #voice generate using ai model
-        success = generate_ai_audio(text, output_file)
+        # Voice: natural female (best for shorts)
+        # communicate = edge_tts.Communicate(
+        #     text=text,
+        #     voice="en-US-AriaNeural",
+        #     rate="+20%",       # slightly faster (good for reels)
+        #     pitch="+2Hz"
+        # )
 
-        if not success:
-            print(f"❌ Failed to generate audio for {file}")
-            continue
+        #voice generate using ai model
+        communicate = generate_ai_audio(text, output_file)
+
+        await communicate.save(output_file)
 
         print(f"✅ Audio created: {output_file}")
 

@@ -28,7 +28,7 @@ jobs:
         run: |
           echo "OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}" >> .env
           echo "NEWS_API_KEY=${{ secrets.NEWS_API_KEY }}" >> .env
-          echo "ELEVEN_API_KEY=${{ secrets.ELEVEN_API_KEY }}" >> .env      
+          echo "WAVESPEED_API_KEY=${{ secrets.WAVESPEED_API_KEY }}" >> .env      
 
       - name: Create client_secret.json
         run: echo '${{ secrets.CLIENT_SECRET }}' > client_secret.json

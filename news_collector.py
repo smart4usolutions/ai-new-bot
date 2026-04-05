@@ -10,15 +10,15 @@ API_KEY = os.getenv("NEWS_API_KEY")
 
 yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
 
-url = "https://newsapi.org/v2/everything"
+url = "https://newsapi.org/v2/top-headlines"
 
 params = {
     #"q": "artificial intelligence OR Technology OR Science OR Global",
-    "q": "india",
-    "from": yesterday,
-    "sortBy": "popularity",
-    "language": "en",
-    "pageSize": 50,
+    "country": "us",
+    # "from": yesterday,
+    # "sortBy": "popularity",
+    # "language": "en",
+    # "pageSize": 50,
     "apiKey": API_KEY
 }
 
