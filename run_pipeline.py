@@ -12,11 +12,11 @@ steps = [
     "python news_filter.py",
     "python image_downloader.py",
     "python news_template.py",
-    "python script_generator.py",
-    "python voice_generator.py",
+    #"python script_generator.py",
+    #"python voice_generator.py",
     # "python subtitle_generator.py",
-    "python shorts_video_generator.py",
-    "python youtube_uploader.py"
+    #"python shorts_video_generator.py",
+    #"python youtube_uploader.py"
 ]
 
 MAX_RETRIES = 3  # total attempts

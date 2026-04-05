@@ -54,3 +54,4 @@ for i, article in enumerate(news, start=1):
 
         with open(f"news_images/news{i}.jpg", "wb") as f:
             f.write(default_img)
+            print(f"No image fetch for news {i}, using default image")
