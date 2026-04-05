@@ -48,3 +48,9 @@ for i, article in enumerate(news, start=1):
 
     except Exception as e:
         print(f"Error processing news {i}: {e}")
+
+        with open("assets/default_news.png", "rb") as f:
+                default_img = f.read()
+
+        with open(f"news_images/news{i}.jpg", "wb") as f:
+            f.write(default_img)
