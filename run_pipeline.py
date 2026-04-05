@@ -15,8 +15,8 @@ steps = [
     "python script_generator.py",
     "python voice_generator.py",
     # "python subtitle_generator.py",
-    #"python shorts_video_generator.py",
-    #"python youtube_uploader.py"
+    "python shorts_video_generator.py",
+    "python youtube_uploader.py"
 ]
 
 MAX_RETRIES = 3  # total attempts
