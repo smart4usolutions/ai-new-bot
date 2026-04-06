@@ -8,6 +8,7 @@ timestamp = datetime.now().strftime("%Y-%m-%d")
 load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+print("API KEY PRESENT:", bool(OPENROUTER_API_KEY))
 if not OPENROUTER_API_KEY:
     print("❌ ERROR: OPENROUTER_API_KEY missing")
     exit(1)
