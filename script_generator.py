@@ -161,13 +161,13 @@ for i, short in enumerate(scripts["shorts"], start=1):
 
 
 # Save long video narration
-long_text = ""
+# long_text = ""
 
-for news in scripts["long_video"]:
-    long_text += news["narration"] + " "
+# for news in scripts["long_video"]:
+#     long_text += news["narration"] + " "
 
-with open("scripts/long_video_voice.txt", "w", encoding="utf-8") as f:
-    f.write(long_text.strip())
+# with open("scripts/long_video_voice.txt", "w", encoding="utf-8") as f:
+#     f.write(long_text.strip())
 
 
 print("\n✅ Scripts generated and saved successfully")
