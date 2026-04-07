@@ -4,28 +4,28 @@ import requests
 from dotenv import load_dotenv
 from datetime import datetime
 
+# Setup
 timestamp = datetime.now().strftime("%Y-%m-%d")
 load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 print("OPENROUTER API KEY PRESENT:", bool(OPENROUTER_API_KEY))
+
 if not OPENROUTER_API_KEY:
     print("❌ ERROR: OPENROUTER_API_KEY missing")
     exit(1)
-
 
 # Load filtered news
 with open("data/filtered_news.json", "r", encoding="utf-8") as f:
     news = json.load(f)
 
 news_text = ""
-
 for i, item in enumerate(news):
     title = item.get("title", "")
     desc = item.get("description", "")
     news_text += f"{i+1}. {title} - {desc}\n"
 
-
+# Prompt
 prompt = f"""
 You are a YouTube news script writer.
 
@@ -53,93 +53,106 @@ Structure:
    {{"headline":"", "narration":""}}
   ]
  ]
-
 }}
 
 Rules:
-
 Shorts narration = about 40-50 words each  
 Narration should NOT include instructions like Hook or Scene.
-
 Add this line at last of every 3rd narration = follow for daily global updates.
-Larration should start with catchy hook as it is youtube shorts
+Narration should start with catchy hook as it is youtube shorts
 Make it engaging, fast-paced, and conversational.
-Start with a hook. Avoid robotic tone.
+Avoid robotic tone.
 
 News:
-
 {news_text}
 """
 
-
-response = requests.post(
-    url="https://openrouter.ai/api/v1/chat/completions",
-    headers={
-        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-        "Content-Type": "application/json",
-        "HTTP-Referer": "https://github.com/smart4usolutions",  # optional but recommended
-        "X-Title": "AI News Bot"
-        
-    },
-    json={
-        "model": "qwen/qwen3.6-plus:free",
-        "messages": [
-            {"role": "user", "content": prompt}
-        ],
-        "response_format": {"type": "json_object"},
-    }
-)
-if response.status_code != 200:
-    print("❌ HTTP Error:", response.status_code)
-    print(response.text)
-    exit(1)
-
-try:
-    result = response.json()
-except Exception:
-    print("❌ Failed to parse JSON")
-    print("Status Code:", response.status_code)
-    print("Raw Response:\n", response.text)
-    exit()
-
-if "choices" in result:
-    content = result["choices"][0]["message"]["content"]
-    content = content.strip().replace("```json", "").replace("```", "")
-    print("\nRAW RESPONSE FROM MODEL:\n")
-    print(content)
-else:
-    print("❌ API Error:", result)
-    content = None
-
-
+# Clean JSON function
 def clean_json(text):
     text = text.strip()
 
-    # Remove markdown
     if text.startswith("```"):
         text = text.split("```")[1]
 
-    # Remove json label
     text = text.replace("json\n", "").replace("json", "")
 
-    # Trim before first { and after last }
     start = text.find("{")
     end = text.rfind("}") + 1
 
     return text[start:end]
 
+# 🔥 Fallback API Call Function
+def call_openrouter_with_fallback(prompt):
+    url = "https://openrouter.ai/api/v1/chat/completions"
 
-content = clean_json(content)
+    headers = {
+        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "Content-Type": "application/json",
+        "HTTP-Referer": "https://github.com/smart4usolutions",
+        "X-Title": "AI News Bot"
+    }
 
-try:
-    scripts = json.loads(content)
-    print("✔️ JSON parsing Done")
-except json.JSONDecodeError as e:
-    print("❌ JSON parsing failed:", e)
+    models_to_try = [
+        "qwen/qwen3.6-plus:free",   #primary model
+        "openai/gpt-oss-20b:free"   #fallback model
+        "nvidia/nemotron-3-super-120b-a12b:free"    #fallback model
+    ]
 
+    for model in models_to_try:
+        try:
+            print(f"\n🚀 Trying model: {model}")
+
+            response = requests.post(
+                url=url,
+                headers=headers,
+                json={
+                    "model": model,
+                    "messages": [
+                        {"role": "user", "content": prompt}
+                    ],
+                    "response_format": {"type": "json_object"},
+                },
+                timeout=25
+            )
+
+            response.raise_for_status()
+            result = response.json()
+
+            if "choices" not in result:
+                print(f"❌ Invalid response from {model}")
+                continue
+
+            content = result["choices"][0]["message"]["content"]
+            content = content.strip().replace("```json", "").replace("```", "")
+
+            content = clean_json(content)
+
+            # Validate JSON
+            scripts = json.loads(content)
+
+            print(f"✅ Success with model: {model}")
+            return scripts, content
+
+        except Exception as e:
+            print(f"❌ Model failed: {model}")
+            print("Error:", e)
+
+    return None, None
+
+# 🚀 Call with fallback
+scripts, raw_content = call_openrouter_with_fallback(prompt)
+
+if not scripts:
+    print("❌ All models failed")
+
+    os.makedirs("scripts", exist_ok=True)
     with open("scripts/debug_response.txt", "w", encoding="utf-8") as f:
-        f.write(content)
+        if raw_content:
+            f.write(raw_content)
+
     exit()
+
+print("✔️ JSON parsing Done")
 
 # Ensure scripts folder exists
 os.makedirs("scripts", exist_ok=True)
@@ -148,10 +161,8 @@ os.makedirs("scripts", exist_ok=True)
 with open("scripts/video_scripts.json", "w", encoding="utf-8") as f:
     json.dump(scripts, f, indent=2)
 
-
 # Save shorts narration
 for i, short in enumerate(scripts["shorts"], start=1):
-
     narration_text = ""
 
     for news in short:
@@ -159,16 +170,5 @@ for i, short in enumerate(scripts["shorts"], start=1):
 
     with open(f"scripts/short{i}_voice_{timestamp}.txt", "w", encoding="utf-8") as f:
         f.write(narration_text.strip())
-
-
-# Save long video narration
-# long_text = ""
-
-# for news in scripts["long_video"]:
-#     long_text += news["narration"] + " "
-
-# with open("scripts/long_video_voice.txt", "w", encoding="utf-8") as f:
-#     f.write(long_text.strip())
-
 
 print("\n✅ Scripts generated and saved successfully")

@@ -7,6 +7,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 API_KEY = os.getenv("NEWS_API_KEY")
+print("NEWS API KEY PRESENT:", bool(API_KEY))
+if not API_KEY:
+    print("❌ ERROR: NEWS_API_KEY Missing")
+    exit(1)
 
 yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
 
