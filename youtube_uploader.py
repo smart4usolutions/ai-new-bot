@@ -63,9 +63,9 @@ for video in videos:
             part="snippet,status",
             body={
                 "snippet": {
-                    "title": f"Daily AI News #{i} #Shorts #AI #Tech",
-                    "description": "Latest AI news in 60 seconds 🚀\n\n#AI #TechNews #Shorts",
-                    "tags": ["AI", "Artificial Intelligence", "Tech News"],
+                    "title": f"Daily USA Updates #{i} #Shorts #USA #Tech",
+                    "description": "Latest Updates in 60 seconds 🚀\n\n#USA #TechNews #Shorts",
+                    "tags": ["USA", "Artificial Intelligence", "Tech News"],
                     "categoryId": "28"
                 },
                 "status": {
