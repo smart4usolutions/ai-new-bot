@@ -2,60 +2,44 @@
   "shorts": [
     [
       {
-        "headline": "U.S. and Iran Agree to 2-Week Ceasefire",
-        "narration": "Breaking news\u2014the U.S. and Iran have agreed to a two-week ceasefire, just hours before Trump\u2019s deadline to launch massive strikes. This sudden diplomatic move could prevent a major escalation in the Middle East. Stay tuned for updates on this developing story."
+        "headline": "U.S. AND IRAN AGREE TO 2-WEEK CEASEFIRE",
+        "narration": "Breaking news! The U.S. and Iran have agreed to a two-week ceasefire, just hours before Trump\u2019s deadline to launch massive strikes. This sudden diplomatic move has sent shockwaves through global markets and geopolitics. Will this pause lead to lasting peace or just a temporary reprieve? Stay tuned for updates."
       },
       {
-        "headline": "Stock Market Reacts to U.S.-Iran Tensions",
-        "narration": "Oil prices are surging, but the Dow is dipping as the U.S. raises the heat on Iran. Investors are on edge, waiting to see how this ceasefire plays out. Will markets stabilize, or is more volatility ahead? Follow for live updates."
+        "headline": "Stock Market Today: Oil Jumps, Dow Dips",
+        "narration": "Oil prices are soaring as tensions with Iran ease, but the Dow is dipping. The U.S. raising the temperature on Iran has traders on edge. With markets reacting to every twist in this geopolitical drama, what\u2019s next for your portfolio? Keep an eye on oil and stocks today."
       },
       {
         "headline": "Republican Clay Fuller Wins Special Election",
-        "narration": "Clay Fuller has won the special election to replace Marjorie Taylor Greene, but his narrow victory is giving Democrats reason to celebrate. This unexpected outcome could signal shifting political winds. What does this mean for the GOP\u2019s future? Stay tuned."
-      },
-      {
-        "headline": "Telehealth Abortion Ruling Preserves Access",
-        "narration": "A federal judge has ruled that telehealth abortion will remain available for now, blocking a Louisiana case seeking to ban mifepristone use via telemedicine. The FDA must review the safety of the abortion pill. This decision is a win for reproductive rights advocates."
-      },
-      {
-        "headline": "Aubrey Plaza Expecting First Child",
-        "narration": "Parks and Rec star Aubrey Plaza is expecting her first child with Christopher Abbott, her costar from the 2020 film Black Bear. The beloved actress is stepping into a new chapter of her life. Congratulations are pouring in from fans and fellow celebrities alike!"
+        "narration": "Clay Fuller has won the special election to replace Marjorie Taylor Greene, but his narrow victory is giving Democrats reason to celebrate. This unexpected outcome could signal a shift in voter sentiment. What does this mean for the GOP\u2019s future? Follow for more political updates."
       }
     ],
     [
       {
-        "headline": "Wife of U.S. Soldier Released from Detention",
-        "narration": "Annie Ramos, the wife of a U.S. Army staff sergeant, has been released from federal immigration detention after nearly a week. Her arrest inside a Louisiana military base sparked outrage. This case highlights the ongoing challenges faced by immigrant families in the U.S."
+        "headline": "Telehealth Abortion Remains Available After Judge\u2019s Ruling",
+        "narration": "A federal judge has ruled that telehealth abortion will remain available for now. The FDA must review the safety of mifepristone, while Louisiana\u2019s case to ban telemedicine abortions will proceed after the review. This decision keeps the debate over reproductive rights front and center. Stay updated on this evolving story."
       },
       {
-        "headline": "Hawaii Investigates Rise in Strep Cases",
-        "narration": "The Hawaii Department of Health is investigating a spike in strep infections in West Hawaii over the past few months. Officials are urging residents to take precautions as they work to identify the cause. Could this be a sign of a larger public health issue?"
+        "headline": "Aubrey Plaza Expecting First Child with Christopher Abbott",
+        "narration": "Parks and Rec star Aubrey Plaza is expecting her first child with actor Christopher Abbott! The couple, who met on the set of Black Bear, are thrilled to welcome their baby. Fans are celebrating the news of this talented duo\u2019s growing family. Congrats to the happy couple!"
       },
       {
-        "headline": "South Korea Stocks Surge as Oil Prices Plunge",
-        "narration": "Asia-Pacific markets are opening higher after Trump agreed to suspend planned attacks on Iranian infrastructure for two weeks. South Korea stocks are leading the gains as oil prices plummet. This ceasefire could bring much-needed stability to global markets."
-      },
-      {
-        "headline": "Retro Gadgets Inspired by the '80s",
-        "narration": "Love the '80s? Amazon has a range of retro-inspired gadgets, from typewriter-style keyboards to CD players styled as record players. These nostalgic devices are perfect for anyone looking to add a touch of vintage flair to their tech collection."
-      },
-      {
-        "headline": "'Oldest Octopus' Fossil Turns Out to Be Something Else",
-        "narration": "Scientists have discovered that what was thought to be the oldest octopus fossil is actually something entirely different. Advanced scans revealed the truth behind this ancient mystery. Stay tuned for more details on this fascinating paleontological find."
+        "headline": "Wife of US Soldier Released from Immigration Detention",
+        "narration": "Annie Ramos, the wife of a U.S. Army staff sergeant, has been released from federal immigration detention after nearly a week. Her detention inside a Louisiana military base sparked outrage and concern. This case highlights the ongoing challenges faced by military families. Follow for more on this story."
       }
     ],
     [
       {
-        "headline": "U.S. and Iran Agree to 2-Week Ceasefire",
-        "narration": "Breaking news\u2014the U.S. and Iran have agreed to a two-week ceasefire, just hours before Trump\u2019s deadline to launch massive strikes. This sudden diplomatic move could prevent a major escalation in the Middle East. Stay tuned for updates on this developing story. Follow for daily global updates."
+        "headline": "DOH, CDC Investigating Rise in Strep Cases in West Hawaii",
+        "narration": "The Hawaii Department of Health is investigating a spike in strep infections in West Hawaii. With cases rising over the past few months, health officials are working to identify the cause and prevent further spread. Stay informed about this public health concern and take necessary precautions."
       },
       {
-        "headline": "Stock Market Reacts to U.S.-Iran Tensions",
-        "narration": "Oil prices are surging, but the Dow is dipping as the U.S. raises the heat on Iran. Investors are on edge, waiting to see how this ceasefire plays out. Will markets stabilize, or is more volatility ahead? Follow for daily global updates."
+        "headline": "South Korea Stocks Lead Gains as Oil Prices Plunge",
+        "narration": "South Korea stocks are leading gains in Asia as oil prices plunge following the U.S.-Iran ceasefire deal. President Trump\u2019s decision to suspend planned attacks has boosted investor confidence. With markets reacting positively, could this be the start of a broader recovery? Follow for daily global updates."
       },
       {
-        "headline": "Republican Clay Fuller Wins Special Election",
-        "narration": "Clay Fuller has won the special election to replace Marjorie Taylor Greene, but his narrow victory is giving Democrats reason to celebrate. This unexpected outcome could signal shifting political winds. What does this mean for the GOP\u2019s future? Follow for daily global updates."
+        "headline": "4 '80s Inspired Retro Gadgets You Can Find on Amazon",
+        "narration": "Step back in time with these 4 retro-inspired gadgets on Amazon! From typewriter-style keyboards to CD players styled as record players, these '80s throwbacks are perfect for nostalgia lovers. Whether you\u2019re a tech geek or a vintage enthusiast, these gadgets are a must-see. Check them out now!"
       }
     ]
   ]

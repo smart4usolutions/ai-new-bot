@@ -93,11 +93,11 @@ def call_openrouter_with_fallback(prompt):
     }
 
     models_to_try = [
-        "stepfun/step-3.5-flash:free",   #primary model
-        "google/gemma-4-26b-a4b-it:free",   #fallback model
-        "nvidia/nemotron-3-super-120b-a12b:free",    #fallback model
-        "arcee-ai/trinity-large-preview:free",
-        "z-ai/glm-4.5-air:free"
+    "z-ai/glm-4.5-air:free",            # fastest & reliable
+    "arcee-ai/trinity-large-preview:free",
+    "google/gemma-4-26b-a4b-it:free",  # slower
+    "stepfun/step-3.5-flash:free",     # unreliable
+    "nvidia/nemotron-3-super-120b-a12b:free"  # VERY slow (last)
     ]
 
     for model in models_to_try:
