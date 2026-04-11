@@ -93,9 +93,11 @@ def call_openrouter_with_fallback(prompt):
     }
 
     models_to_try = [
-        "qwen/qwen3.6-plus:free",   #primary model
-        "openai/gpt-oss-20b:free"   #fallback model
-        "nvidia/nemotron-3-super-120b-a12b:free"    #fallback model
+        "stepfun/step-3.5-flash:free",   #primary model
+        "google/gemma-4-26b-a4b-it:free",   #fallback model
+        "nvidia/nemotron-3-super-120b-a12b:free",    #fallback model
+        "arcee-ai/trinity-large-preview:free",
+        "z-ai/glm-4.5-air:free"
     ]
 
     for model in models_to_try:
