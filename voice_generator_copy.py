@@ -23,15 +23,15 @@ async def generate_audio():
         output_file = f"audio/short{i}_{timestamp}.mp3"
 
         #Voice: natural female (best for shorts)
-        # communicate = edge_tts.Communicate(
-        #     text=text,
-        #     voice="en-US-AriaNeural",
-        #     rate="+20%",       # slightly faster (good for reels)
-        #     pitch="+2Hz"
-        # )
+        communicate = edge_tts.Communicate(
+            text=text,
+            voice="en-US-AriaNeural",
+            rate="+20%",       # slightly faster (good for reels)
+            pitch="+2Hz"
+        )
 
         #voice generate using ai model
-        communicate = generate_ai_audio(text, output_file)
+        #communicate = generate_ai_audio(text, output_file)
 
         await communicate.save(output_file)
 
