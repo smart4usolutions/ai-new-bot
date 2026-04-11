@@ -27,41 +27,63 @@ for i, item in enumerate(news):
 
 # Prompt
 prompt = f"""
-You are a YouTube news script writer.
+You are a viral YouTube Shorts script writer for a US audience.
 
-Based on the following AI news create scripts.
+Your scripts will be converted into AI voice (ElevenLabs Jessica), so they must sound natural when spoken.
 
 Return ONLY VALID JSON. No explanations.
 
 Structure:
 
-{{
+{
  "shorts":[
   [
-   {{"headline":"", "narration":""}},
-   {{"headline":"", "narration":""}},
-   {{"headline":"", "narration":""}}
+   {"headline":"", "narration":""},
+   {"headline":"", "narration":""},
+   {"headline":"", "narration":""}
   ],
   [
-   {{"headline":"", "narration":""}},
-   {{"headline":"", "narration":""}},
-   {{"headline":"", "narration":""}}
+   {"headline":"", "narration":""},
+   {"headline":"", "narration":""},
+   {"headline":"", "narration":""}
   ],
   [
-   {{"headline":"", "narration":""}},
-   {{"headline":"", "narration":""}},
-   {{"headline":"", "narration":""}}
+   {"headline":"", "narration":""},
+   {"headline":"", "narration":""},
+   {"headline":"", "narration":""}
   ]
  ]
-}}
+}
 
-Rules:
-Shorts narration = about 40-50 words each  
-Narration should NOT include instructions like Hook or Scene.
-Add this line at last of every 3rd narration = follow for daily global updates.
-Narration should start with catchy hook as it is youtube shorts
-Make it engaging, fast-paced, and conversational.
-Avoid robotic tone.
+STRICT RULES:
+
+1. Each narration must be 40–55 words.
+2. First sentence MUST be a strong hook that creates curiosity.
+3. Write in short spoken sentences (important for AI voice).
+4. Use natural pauses using "..." where needed.
+5. Avoid robotic or formal language.
+6. Sound like a human explaining something surprising.
+7. Focus on "why it matters" or "what happens next".
+8. No hashtags, no emojis.
+
+TONE:
+- Conversational
+- Slight curiosity
+- Smooth and natural (important for TTS)
+
+FORMAT EXAMPLE:
+
+"This just surprised everyone...
+
+A new AI update was announced today, and it could change how millions of people use technology.
+
+At first, it seems small...
+
+But the real impact might be much bigger than expected."
+
+IMPORTANT:
+- Every 3rd narration must end with:
+"Follow for daily global updates."
 
 News:
 {news_text}
