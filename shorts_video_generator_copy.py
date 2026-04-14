@@ -2,8 +2,8 @@ import os
 import subprocess
 from datetime import datetime
 
-#timestamp = datetime.now().strftime("%Y-%m-%d")
-timestamp = "2026-04-13"
+timestamp = datetime.now().strftime("%Y-%m-%d")
+
 
 audio_folder = "audio"
 image_folder = "formatted_images"
