@@ -66,7 +66,8 @@ for i in range(1, 4):
         duration = get_audio_duration(audio)
 
         command = [
-            "bin/ffmpeg.exe",
+            #"bin/ffmpeg.exe",
+            "ffmpeg",
 
             "-loop", "1", "-t", str(duration), "-i", img,
             "-i", audio,
