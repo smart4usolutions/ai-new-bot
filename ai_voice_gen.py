@@ -5,11 +5,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 WAVESPEED_API_KEY = os.getenv("WAVESPEED_API_KEY")
+print("WAVESPEED API KEY PRESENT:", bool(WAVESPEED_API_KEY))
 
 
 def generate_ai_audio(script_text, output_file):
 
-    submit_url = "https://api.wavespeed.ai/api/v3/wavespeed-ai/elevenlabs/turbo-v2.5/text-to-speech"
+    submit_url = "https://api.wavespeed.ai/api/v3/elevenlabs/turbo-v2.5"
 
     headers = {
         "Authorization": f"Bearer {WAVESPEED_API_KEY}",
@@ -17,11 +18,12 @@ def generate_ai_audio(script_text, output_file):
     }
 
     payload = {
-        "text": script_text,
-        "voice": "Jessica",
-        "model_settings": {
-            "stability": 0.45,
-            "similarity_boost": 0.8
+    "text": script_text,
+    "voice_id": "Jessica",
+    "model_id": "elevenlabs/turbo-v2.5",   # 👈 ADD THIS LINE
+    "model_settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8
         }
     }
 

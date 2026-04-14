@@ -6,6 +6,7 @@ from PIL import Image
 
 input_folder = "news_images"
 output_folder = "formatted_images"
+asset_folder = "assets"
 
 os.makedirs(output_folder, exist_ok=True)
 
@@ -17,36 +18,28 @@ with open("data/filtered_news.json","r",encoding="utf-8") as f:
 
 for i in range(1,10):
 
-    img = Image.open(f"{input_folder}/news{i}.jpg").convert("RGBA")
+    template = Image.open(f"{asset_folder}/template.png").convert("RGBA")
+    bg = Image.open(f"{input_folder}/news{i}.jpg").convert("RGBA")
+    bg = bg.resize((1920, 1920), Image.LANCZOS)
+    bg.thumbnail((1080, 1920))
 
-    target_w, target_h = 1080, 1920
-    target_ratio = target_w / target_h
-    img_ratio = img.width / img.height
+    background = Image.new("RGBA", (1080, 1920), (0,0,0,255))
 
-    if img_ratio > target_ratio:
-        # Image is wider → crop width
-        new_width = int(img.height * target_ratio)
-        left = (img.width - new_width) // 2
-        img = img.crop((left, 0, left + new_width, img.height))
-    else:
-        # Image is taller → crop height
-        new_height = int(img.width / target_ratio)
-        top = (img.height - new_height) // 2
-        img = img.crop((0, top, img.width, top + new_height))
+    bg_x = (1080 - bg.width) // 2
+    bg_y = (1920 - bg.height) // 2
 
-    # Now resize safely
-    img = img.resize((1080, 1920), Image.LANCZOS)
+    background.paste(bg, (bg_x, bg_y))
 
+    final = Image.alpha_composite(background, template)
 
-    overlay = Image.new("RGBA", img.size, (0,0,0,0))
-    draw = ImageDraw.Draw(overlay)
+    draw = ImageDraw.Draw(final)
 
     # BREAKING TAG POSITION
     tag_top = 1700
     tag_bottom = 1765
 
-    draw.rectangle((0,tag_top,420,tag_bottom), fill=(220,0,0,255))
-    draw.text((20,tag_top+10),"BREAKING AI NEWS",font=font_tag,fill="white")
+    # draw.rectangle((0,tag_top,420,tag_bottom), fill=(220,0,0,255))
+    # draw.text((20,tag_top+10),"BREAKING AI NEWS",font=font_tag,fill="white")
 
     # HEADLINE
     title = news[i-1]["title"]
@@ -59,11 +52,12 @@ for i in range(1,10):
         bbox = draw.textbbox((0,0),line,font=font_headline)
         total_height += bbox[3]-bbox[1] + 10
 
-    headline_bottom = tag_top - 20
-    headline_top = headline_bottom - total_height - 40
+    #headline_bottom = tag_top - 20
+    headline_top = 1188
+    headline_bottom = headline_top + total_height + 40
 
-    # semi transparent black background
-    draw.rectangle((0,headline_top,1080,headline_bottom), fill=(0,0,0,160))
+    # white background
+    draw.rectangle((100,headline_top,1080-100,headline_bottom), fill="white")
 
     y = headline_top + 20
 
@@ -72,10 +66,8 @@ for i in range(1,10):
         w = bbox[2]-bbox[0]
         h = bbox[3]-bbox[1]
 
-        draw.text(((1080-w)/2,y),line,font=font_headline,fill="white")
+        draw.text(((1080-w)/2,y),line,font=font_headline,fill="red")
         y += h + 10
-
-    final = Image.alpha_composite(img, overlay)
 
     final.convert("RGB").save(f"{output_folder}/news{i}.jpg")
 

@@ -29,170 +29,114 @@ for i, item in enumerate(news):
 prompt = f"""
 You are a viral YouTube Shorts script writer for a US audience.
 
-Your scripts will be converted into AI voice (ElevenLabs Jessica), so they must sound natural when spoken.
+Return ONLY VALID JSON.
 
-Return ONLY VALID JSON. No explanations.
-
-Structure:
-
-{
+{{
  "shorts":[
   [
-   {"headline":"", "narration":""},
-   {"headline":"", "narration":""},
-   {"headline":"", "narration":""}
+   {{"headline":"", "narration":""}},
+   {{"headline":"", "narration":""}},
+   {{"headline":"", "narration":""}}
   ],
   [
-   {"headline":"", "narration":""},
-   {"headline":"", "narration":""},
-   {"headline":"", "narration":""}
+   {{"headline":"", "narration":""}},
+   {{"headline":"", "narration":""}},
+   {{"headline":"", "narration":""}}
   ],
   [
-   {"headline":"", "narration":""},
-   {"headline":"", "narration":""},
-   {"headline":"", "narration":""}
+   {{"headline":"", "narration":""}},
+   {{"headline":"", "narration":""}},
+   {{"headline":"", "narration":""}}
   ]
  ]
-}
+}}
 
-STRICT RULES:
-
-1. Each narration must be 40–55 words.
-2. First sentence MUST be a strong hook that creates curiosity.
-3. Write in short spoken sentences (important for AI voice).
-4. Use natural pauses using "..." where needed.
-5. Avoid robotic or formal language.
-6. Sound like a human explaining something surprising.
-7. Focus on "why it matters" or "what happens next".
-8. No hashtags, no emojis.
-
-TONE:
-- Conversational
-- Slight curiosity
-- Smooth and natural (important for TTS)
-
-FORMAT EXAMPLE:
-
-"This just surprised everyone...
-
-A new AI update was announced today, and it could change how millions of people use technology.
-
-At first, it seems small...
-
-But the real impact might be much bigger than expected."
-
-IMPORTANT:
-- Every 3rd narration must end with:
-"Follow for daily global updates."
+Rules:
+- 40–55 words each
+- conversational tone
+- every 3rd narration ends with: Follow for daily global updates.
 
 News:
 {news_text}
 """
 
-# Clean JSON function
 def clean_json(text):
     text = text.strip()
-
     if text.startswith("```"):
         text = text.split("```")[1]
-
     text = text.replace("json\n", "").replace("json", "")
-
     start = text.find("{")
     end = text.rfind("}") + 1
-
     return text[start:end]
 
-# 🔥 Fallback API Call Function
 def call_openrouter_with_fallback(prompt):
     url = "https://openrouter.ai/api/v1/chat/completions"
 
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://github.com/smart4usolutions",
-        "X-Title": "AI News Bot"
     }
 
-    models_to_try = [
-    "z-ai/glm-4.5-air:free",            # fastest & reliable
-    "arcee-ai/trinity-large-preview:free",
-    "google/gemma-4-26b-a4b-it:free",  # slower
-    "stepfun/step-3.5-flash:free",     # unreliable
-    "nvidia/nemotron-3-super-120b-a12b:free"  # VERY slow (last)
+    models = [
+        "z-ai/glm-4.5-air:free",
+        "arcee-ai/trinity-large-preview:free",
+        "google/gemma-4-26b-a4b-it:free"
     ]
 
-    for model in models_to_try:
+    for model in models:
         try:
-            print(f"\n🚀 Trying model: {model}")
+            print(f"🚀 Trying: {model}")
 
             response = requests.post(
-                url=url,
+                url,
                 headers=headers,
                 json={
                     "model": model,
-                    "messages": [
-                        {"role": "user", "content": prompt}
-                    ],
+                    "messages": [{"role": "user", "content": prompt}],
                     "response_format": {"type": "json_object"},
                 },
                 timeout=25
             )
 
-            response.raise_for_status()
             result = response.json()
-
-            if "choices" not in result:
-                print(f"❌ Invalid response from {model}")
-                continue
-
             content = result["choices"][0]["message"]["content"]
-            content = content.strip().replace("```json", "").replace("```", "")
-
             content = clean_json(content)
 
-            # Validate JSON
-            scripts = json.loads(content)
-
-            print(f"✅ Success with model: {model}")
-            return scripts, content
+            return json.loads(content)
 
         except Exception as e:
-            print(f"❌ Model failed: {model}")
-            print("Error:", e)
+            print("❌ Failed:", model, e)
 
-    return None, None
+    return None
 
-# 🚀 Call with fallback
-scripts, raw_content = call_openrouter_with_fallback(prompt)
+# Generate scripts
+scripts = call_openrouter_with_fallback(prompt)
 
 if not scripts:
     print("❌ All models failed")
-
-    os.makedirs("scripts", exist_ok=True)
-    with open("scripts/debug_response.txt", "w", encoding="utf-8") as f:
-        if raw_content:
-            f.write(raw_content)
-
     exit()
 
 print("✔️ JSON parsing Done")
 
-# Ensure scripts folder exists
+# Ensure folder
 os.makedirs("scripts", exist_ok=True)
 
 # Save full JSON
 with open("scripts/video_scripts.json", "w", encoding="utf-8") as f:
     json.dump(scripts, f, indent=2)
 
-# Save shorts narration
-for i, short in enumerate(scripts["shorts"], start=1):
-    narration_text = ""
+# 🔥 NEW LOGIC (9 FILES)
+for short_index, short in enumerate(scripts["shorts"], start=1):
+    
+    for voice_index, news_item in enumerate(short, start=1):
 
-    for news in short:
-        narration_text += news["narration"] + " "
+        narration = news_item["narration"]
 
-    with open(f"scripts/short{i}_voice_{timestamp}.txt", "w", encoding="utf-8") as f:
-        f.write(narration_text.strip())
+        filename = f"short{short_index}_voice{voice_index}_{timestamp}.txt"
 
-print("\n✅ Scripts generated and saved successfully")
+        with open(f"scripts/{filename}", "w", encoding="utf-8") as f:
+            f.write(narration.strip())
+
+        print("Saved:", filename)
+
+print("\n✅ 9 Scripts generated successfully")

@@ -25,3 +25,13 @@
 2026-04-09 12:19:49.741761 | videos\short1.mp4 | SUCCESS | https://www.youtube.com/watch?v=n46vCetKn2Y
 2026-04-09 12:19:53.000737 | videos\short2.mp4 | SUCCESS | https://www.youtube.com/watch?v=_zzGi9zjiF8
 2026-04-09 12:19:56.354368 | videos\short3.mp4 | SUCCESS | https://www.youtube.com/watch?v=yQtPFQ6G2ZY
+2026-04-12 20:09:18.601969 | videos\exp_short1.mp4 | SUCCESS | https://www.youtube.com/watch?v=JL9awXGqIpA
+2026-04-12 20:09:28.045812 | videos\exp_short2.mp4 | SUCCESS | https://www.youtube.com/watch?v=GKJ5UYAMyO0
+2026-04-12 20:09:41.049142 | videos\exp_short3.mp4 | SUCCESS | https://www.youtube.com/watch?v=b2FXq4K_S2I
+2026-04-12 20:10:17.546953 | videos\short2.mp4 | SUCCESS | https://www.youtube.com/watch?v=fnCzgzc6qgE
+2026-04-12 20:10:52.304861 | videos\short3.mp4 | SUCCESS | https://www.youtube.com/watch?v=o0SDLeMvHE4
+2026-04-13 12:35:32.633516 | videos\exp_short1.mp4 | SUCCESS | https://www.youtube.com/watch?v=BuMn-SG_P5w
+2026-04-13 12:35:37.555702 | videos\exp_short2.mp4 | SUCCESS | https://www.youtube.com/watch?v=eAd1TPTsz2M
+2026-04-13 12:35:42.326095 | videos\exp_short3.mp4 | SUCCESS | https://www.youtube.com/watch?v=zBsfiPD8D2E
+2026-04-13 12:35:44.564109 | videos\short2.mp4 | SUCCESS | https://www.youtube.com/watch?v=paWhUuCCibU
+2026-04-13 12:35:47.215492 | videos\short3.mp4 | SUCCESS | https://www.youtube.com/watch?v=fTamvefhqOs

@@ -15,7 +15,8 @@ steps = [
     "python script_generator.py",
     "python voice_generator.py",
     #"python subtitle_generator.py",
-    "python shorts_video_generator.py",
+    #"python shorts_video_generator.py",    #runs on git
+    "python shorts_video_generator_copy.py", #runs on local
     "python youtube_uploader.py"
 ]
 

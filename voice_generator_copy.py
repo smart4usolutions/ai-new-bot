@@ -13,7 +13,7 @@ async def generate_audio():
         f"short1_voice_{timestamp}.txt",
         f"short2_voice_{timestamp}.txt",
         f"short3_voice_{timestamp}.txt",
-        f"long_video_voice.txt"
+        #f"long_video_voice.txt"
 ]
 
     for i, file in enumerate(scripts, start=1):
