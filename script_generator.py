@@ -78,9 +78,11 @@ def call_openrouter_with_fallback(prompt):
     }
 
     models = [
-        "z-ai/glm-4.5-air:free",
-        "arcee-ai/trinity-large-preview:free",
-        "google/gemma-4-26b-a4b-it:free"
+        "openrouter/free",
+        "openrouter/free",
+        "openrouter/free",
+        "openrouter/free",
+        "openrouter/free"
     ]
 
     for model in models:

@@ -2,44 +2,142 @@
   "shorts": [
     [
       {
-        "headline": "Britney Spears Enters Rehab After Racy Video",
-        "narration": "Pop icon Britney Spears voluntarily checked into rehab following a DUI arrest. Not before posting a steamy dance video in a sheer bodysuit that went viral! Fans worry about her wellbeing as she takes this step for her health. Let's hope this time in rehab brings her peace and stability."
+        "headline": "NFL Reporter Resigns After Controversial Photos",
+        "narration": "Prominent NFL reporter Dianna Russini has resigned after photos surfaced of her with New England Patriots Coach Mike Vrabel. The Athletic launched an ethics investigation into their relationship, sending shockwaves through the sports world. What's next for both parties?"
       },
       {
-        "headline": "Deadly Stampede Hits Haitian Fortress",
-        "narration": "A tragic stampede at a Haitian tourist fortress has killed at least 25 people and injured dozens more. The incident occurred when crowds surged at the mountaintop attraction. Authorities are investigating what caused the deadly crush, as the country mourns this devastating loss of life."
+        "headline": "Reporter Steps Down Amid Ethics Probe",
+        "narration": "The sports community is buzzing about Dianna Russini's sudden resignation. Her relationship with Patriots Coach Mike Vrabel has raised serious ethical questions. The NFL's most trusted voices are now under scrutiny. Will this change how reporters cover teams?"
       },
       {
-        "headline": "Markets Plummet After Trump's Hormuz Blockade",
-        "narration": "Dow futures have plummeted 500 points after President Trump announced plans to block the Strait of Hormuz. This comes as diplomatic talks have failed, causing major market volatility. All three major averages are dropping despite previous hopes of conflict resolution. Follow for daily global updates."
+        "headline": "NFL Reporter's Resignation Shocks Sports World",
+        "narration": "The NFL landscape has shifted dramatically as Dianna Russini steps down amid controversy. Her connection to Patriots Coach Mike Vrabel has created an unprecedented situation. The ethics investigation continues while fans and analysts debate the implications. Follow for daily global updates."
       }
     ],
     [
       {
-        "headline": "Trump's Feud With Pope Leo XIV Escalates",
-        "narration": "President Trump has delivered a scathing attack on Pope Leo XIV, extending their extraordinary feud over potential war with Iran. The U.S. president questioned the American-born pontiff's job performance, creating unprecedented tension between church and state. This verbal exchange has stunned observers worldwide."
+        "headline": "Heat vs Hornets: Live NBA Action",
+        "narration": "Basketball fans, get ready for tonight's showdown between the Miami Heat and Charlotte Hornets! CBSSports.com brings you real-time coverage, live stats, and expert analysis. Don't miss this crucial matchup as both teams battle for playoff positioning. Tip-off is almost here!"
       },
       {
-        "headline": "Huawei Beats Samsung and Apple to Foldable Phone",
-        "narration": "Huawei has just unveiled the Pura X Max, a groundbreaking foldable phone that's beating Samsung and Apple to the punch! This innovative design is kicking off 2026's shift toward wider foldable screens. Tech enthusiasts are buzzing about what this means for future smartphone trends and competition in the market."
+        "headline": "NBA Showdown Tonight!",
+        "narration": "The Miami Heat face the Charlotte Hornets in what promises to be an electrifying NBA showdown. With live scores and stats at your fingertips, you won't miss a single play. Check out CBSSports.com for comprehensive coverage and expert predictions. Who will take home the victory?"
       },
       {
-        "headline": "Swalwell Exits Governor Race After Assault Allegations",
-        "narration": "Democratic representative Eric Swalwell has suspended his California governor campaign following media reports of sexual assault allegations. The abrupt exit comes after his promising start in the race. Swalwell made the announcement amid the serious accusations, leaving the field wide open in the upcoming election. Follow for daily global updates."
+        "headline": "Basketball Fans Don't Miss This Game",
+        "narration": "April 14th is heating up with the Miami Heat vs. Charlotte Hornets clash. CBS Sports delivers all the action, from game previews to live recaps. Whether you're courtside or watching from home, this is one NBA game you won't want to skip. Follow for daily global updates."
       }
     ],
     [
       {
-        "headline": "Rory McIlroy Claims Second Masters Title",
-        "narration": "Golf superstar Rory McIlroy has captured his second Masters title in dramatic fashion! This historic win solidifies his place among golf's greats and adds another major championship to his already impressive resume. McIlroy's performance has fans debating where he ranks among the all-time legends of the sport."
+        "headline": "Teen Gunman Attacks Turkish School",
+        "narration": "A tragic incident unfolded at a Turkish high school where a teenager opened fire with a shotgun, wounding 16 people before taking his own life. The random attack at a vocational school in Siverek has left the community in shock and mourning. Investigations continue into the motive behind this senseless violence."
       },
       {
-        "headline": "'Euphoria' Season 3 Premieres With Time Jump",
-        "narration": "The highly anticipated 'Euphoria' season 3 has finally arrived, kicking off with a major time jump that has fans buzzing. Interestingly, Hunter Schafer and Eric Dane are notably absent from the premiere episode. Viewers are eager to see how the story unfolds after this surprising narrative shift."
+        "headline": "16 Wounded in School Shooting Tragedy",
+        "narration": "Southeastern Turkey is reeling from a school shooting that left 16 people injured. The teenager randomly fired inside a vocational school before ending his own life. Authorities are working to understand what led to this devastating attack. The community is left questioning how such tragedy could strike in a place of learning."
       },
       {
-        "headline": "Planet's Strongest Storm Threatens Pacific Islands",
-        "narration": "The most powerful storm on Earth is now bearing down on Guam and the Northern Mariana Islands, bringing destructive winds and flooding. Residents are preparing for the worst as this catastrophic weather system approaches. Emergency officials are urging evacuation in the path of this unprecedented super typhoon. Follow for daily global updates."
+        "headline": "Turkey School Shooting Ends in Suicide",
+        "narration": "A shocking school shooting in Turkey has left 16 wounded and one dead after a teenage gunman took his own life. The attack at Siverek's vocational high school has sparked national outrage and calls for better school safety measures. The country mourns yet another senseless act of violence. Follow for daily global updates."
+      }
+    ],
+    [
+      {
+        "headline": "Mexico's President Takes Firm Stand on US",
+        "narration": "Mexican President Claudia Sheinbaum has adopted a much firmer stance toward the United States, defying pressures where other countries have caved. This shift comes amid changing geopolitical dynamics in the Americas and Middle East, giving her newfound leverage in international relations."
+      },
+      {
+        "headline": "Sheinbaum Defies US Pressure",
+        "narration": "President Claudia Sheinbaum is making waves with her increasingly defiant approach toward US policies. While other nations have yielded to American pressure, Mexico stands firm. This assertive position reflects growing confidence in Mexico's international standing and strategic importance."
+      },
+      {
+        "headline": "Mexico-US Relations Take New Turn",
+        "narration": "The relationship between Mexico and the US is experiencing a significant shift under President Sheinbaum's leadership. Her firm stance on migrant deaths and Cuba signals a new chapter in bilateral relations. This comes as geopolitical changes in the Americas and Middle East reshape international dynamics. Follow for daily global updates."
+      }
+    ],
+    [
+      {
+        "headline": "SpaceX Launches 25 New Starlink Satellites",
+        "narration": "SpaceX is preparing for another Falcon 9 mission to deploy 25 Starlink satellites, enhancing global internet coverage. The West Coast launch promises spectacular views as these technological marvels head into orbit. Space enthusiasts won't want to miss this next step in satellite internet expansion."
+      },
+      {
+        "headline": "West Coast SpaceX Mission Tonight",
+        "narration": "Get ready for a spectacular SpaceX launch from the West Coast! The Falcon 9 rocket will carry 25 Starlink satellites into space, continuing the mission to provide global internet coverage. Spaceflight Now brings you live coverage of this exciting technological achievement. Don't look away!"
+      },
+      {
+        "headline": "25 Starlink Satellites Head to Orbit",
+        "narration": "SpaceX is once again pushing the boundaries of space technology with the latest Falcon 9 mission carrying 25 Starlink satellites. This West Coast launch continues the company's ambitious plan to blanket the planet with internet coverage. Each satellite brings us closer to a truly connected world. Follow for daily global updates."
+      }
+    ],
+    [
+      {
+        "headline": "Woman Shot by Police After Attack",
+        "narration": "Omaha police fatally shot a woman who allegedly kidnapped a young boy and slashed his face at a Walmart. The violent confrontation ended when officers intervened, but not before the child suffered serious injuries. The community is grappling with the tragic turn of events that unfolded at the store."
+      },
+      {
+        "headline": "Police Kill Suspected Child Abductor",
+        "narration": "A woman's life ended at an Omaha Walmart after police say she kidnapped a child and slashed his face. Officers responded to the scene and fatally shot the suspect. The young victim is recovering from his injuries as investigators piece together the sequence of events that led to this violent confrontation."
+      },
+      {
+        "headline": "Walmart Ends in Fatal Police Shooting",
+        "narration": "A routine trip to an Omaha Walmart turned deadly when police say a woman kidnapped a child and attacked him with a knife. The situation escalated when officers fatally shot the suspect to protect the victim. The community is left questioning how such violence could erupt in an everyday shopping environment. Follow for daily global updates."
+      }
+    ],
+    [
+      {
+        "headline": "Margot Robbie Confirms Ocean's 11 Prequel",
+        "narration": "Margot Robbie has officially confirmed the plot for the upcoming Ocean's 11 prequel! The film will follow Danny Ocean's parents at the 1962 Monaco Grand Prix. Fans are buzzing with excitement about this new chapter in the beloved franchise. More details are expected soon."
+      },
+      {
+        "headline": "New Ocean Movie Details Revealed",
+        "narration": "CinemaCon just dropped major details about the Ocean's prequel! Margot Robbie confirmed the story will center on Danny Ocean's parents during the glamorous 1962 Monaco Grand Prix. This prequel promises all the style and intrigue of the original series with a fresh twist on heist history."
+      },
+      {
+        "headline": "Danny Ocean's Parents Get Their Story",
+        "narration": "The Ocean's universe is expanding with a prequel that explores Danny Ocean's parents' story at the 1962 Monaco Grand Prix. Margot Robbie revealed exciting details at CinemaCon, promising a stylish heist film that connects to the beloved series. This family saga adds another layer to the Ocean legacy. Follow for daily global updates."
+      }
+    ],
+    [
+      {
+        "headline": "Vance Warns Pope About Iran Comments",
+        "narration": "VP JD Vance, a Catholic, has pushed back on Pope Leo XIV's criticism of the war on Iran. He warned the pontiff to be 'careful' with his words, suggesting they're not theologically sound. This rare public rebuke from a high-ranking American Catholic has sparked international debate."
+      },
+      {
+        "headline": "VP Pushes Back Against Pope's Criticism",
+        "narration": "Vice President JD Vance, a practicing Catholic, has publicly challenged Pope Leo XIV's remarks on the Iran conflict. Vance claims the pontiff's criticism lacks theological grounding and urged him to choose words more carefully. The unusual rebuke highlights tensions between religious and political perspectives."
+      },
+      {
+        "headline": "Catholic VP Defends War Against Iran",
+        "narration": "JD Vance, as both Vice President and Catholic, has created controversy by publicly criticizing the Pope's stance on the Iran war. His warning for the pontiff to be 'careful' with words has divided religious and political circles. The VP's position highlights the complex intersection of faith and policy in modern geopolitics. Follow for daily global updates."
+      }
+    ],
+    [
+      {
+        "headline": "AI Startup Valued at $800 Billion",
+        "narration": "Anthropic PBC, creator of the AI Claude, is attracting investor offers that could value the company at an astonishing $800 billion. This potential valuation would make it one of the most valuable startups in history. The AI race continues to accelerate as tech giants vie for dominance."
+      },
+      {
+        "headline": "Claude Maker Attracts Massive Investment",
+        "narration": "The artificial intelligence startup Anthropic is turning heads with offers that could value it at $800 billion. Known for creating the Claude AI, the company has so far resisted these investment overtures. As the AI competition heats up, all eyes are on whether Anthropic will accept such staggering valuation terms."
+      },
+      {
+        "headline": "Anthropic's Skyrocketing Valuation",
+        "narration": "Anthropic PBC, the AI startup behind Claude, is receiving investment offers that could value it at an unprecedented $800 billion. Despite these staggering figures, the company has thus far resisted the deals. This valuation reflects the intense competition and massive potential in the rapidly evolving artificial intelligence market. Follow for daily global updates."
+      }
+    ],
+    [
+      {
+        "headline": "Asia Markets Rise on US-Iran Hopes",
+        "narration": "Asian markets opened higher today, buoyed by positive developments in US-Iran relations and declining oil prices. The combination of geopolitical easing and energy cost relief has investors optimistic across the region. This upward trend follows overnight gains in US stocks."
+      },
+      {
+        "headline": "Stocks Gain on Oil Price Drop",
+        "narration": "Lower oil prices and hopes for a potential US-Iran deal are sending Asian markets higher. Investors are responding positively to these dual positive factors, with regional stocks tracking overnight gains from the US. The improved outlook for both energy markets and international relations is boosting confidence."
+      },
+      {
+        "headline": "Asian Markets Track US Gains",
+        "narration": "Asia-Pacific markets are following the positive momentum from US stocks as hopes rise for a US-Iran deal and oil prices continue to fall. This combination of geopolitical easing and energy relief is creating favorable conditions across Asian markets. Investors are watching closely to see if this trend continues. Follow for daily global updates."
       }
     ]
   ]
