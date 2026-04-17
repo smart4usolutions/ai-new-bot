@@ -44,7 +44,7 @@ def get_audio_duration(audio_file):
 # 🧪 EXPERIMENTAL (1 NEWS = 1 SHORT)
 # =====================================================
 
-num_shorts = 9   # 🔥 dynamic
+num_shorts = 3   # 🔥 dynamic
 k=0
 for i in range(1, 4):
     for j in range(1, 4):
