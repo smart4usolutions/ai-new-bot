@@ -51,12 +51,37 @@ Return ONLY VALID JSON.
  ]
 }}
 
-Rules:
-- 40–55 words each
-- conversational tone
-- every 3rd narration ends with: Follow for daily global updates.
+STRICT RULES:
+- Each narration MUST be 40–55 words
+- Conversational, high-energy, emotionally engaging tone
+- Use short punchy sentences (scroll-stopping rhythm)
 
-News:
+HOOK STRATEGY (MANDATORY):
+- First 1–2 lines must create curiosity or shock
+- Use hooks like:
+  - “This just changed everything…”
+  - “Nobody is talking about this…”
+  - “This is actually scary…”
+  - “Wait till you hear this…”
+  - “This could affect YOU…”
+
+ENGAGEMENT TECHNIQUES:
+- Add tension, urgency, or surprise
+- Use open loops (don’t reveal everything immediately)
+- Use contrast (before vs after, expected vs reality)
+- Make viewer feel “I need to know this”
+
+RETENTION BOOSTERS:
+- Break sentences across lines for pacing
+- Use natural spoken pauses
+- Avoid robotic or news anchor tone
+
+ENDING RULE:
+- Every narration MUST end EXACTLY with:
+  Follow for daily global updates.
+
+CONTENT:
+- Based on this news:
 {news_text}
 """
 
