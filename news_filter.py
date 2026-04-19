@@ -18,7 +18,7 @@ for article in articles:
             "url": article["url"]
         })
 
-top10 = filtered[:10]
+top10 = filtered[:3]
 
 with open("data/filtered_news.json", "w", encoding="utf-8") as f:
     json.dump(top10, f, indent=2)

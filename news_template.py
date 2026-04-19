@@ -16,7 +16,7 @@ font_headline = ImageFont.truetype("Roboto-Bold.ttf", 70)
 with open("data/filtered_news.json","r",encoding="utf-8") as f:
     news = json.load(f)
 
-for i in range(1,10):
+for i in range(1,4):
 
     template = Image.open(f"{asset_folder}/template.png").convert("RGBA")
     bg = Image.open(f"{input_folder}/news{i}.jpg").convert("RGBA")
