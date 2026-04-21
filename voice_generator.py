@@ -11,13 +11,13 @@ async def generate_audio():
     scripts = [
         f"short1_voice1_{timestamp}.txt",
         f"short1_voice2_{timestamp}.txt",
-        f"short1_voice3_{timestamp}.txt",
-        f"short2_voice1_{timestamp}.txt",
-        f"short2_voice2_{timestamp}.txt",
-        f"short2_voice3_{timestamp}.txt",
-        f"short3_voice1_{timestamp}.txt",
-        f"short3_voice2_{timestamp}.txt",
-        f"short3_voice3_{timestamp}.txt"
+        f"short1_voice3_{timestamp}.txt"
+        # f"short2_voice1_{timestamp}.txt",
+        # f"short2_voice2_{timestamp}.txt",
+        # f"short2_voice3_{timestamp}.txt",
+        # f"short3_voice1_{timestamp}.txt",
+        # f"short3_voice2_{timestamp}.txt",
+        # f"short3_voice3_{timestamp}.txt"
 ]
 
     for i, file in enumerate(scripts, start=1):
